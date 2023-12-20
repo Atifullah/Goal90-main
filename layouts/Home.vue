@@ -1,6 +1,8 @@
 <template>
-  <div class="side-menu">
-    <h1>Home</h1>
+  <div class="home">
+    <div class="Home-banner">
+      <img src="../assets/images/Banner.svg" />
+    </div>
   </div>
 </template>
 
@@ -11,5 +13,6 @@ export default {
   },
 }
 </script>
-
-<style></style>
+<style scoped lang="scss">
+@import '../assets/scss/global/home/home.scss';
+</style>

@@ -10,17 +10,12 @@
           />
         </a-col>
         <a-col class="">
-          <!-- <a-input-search
+          <a-input-search
             placeholder="input search text"
-            style="
-              width: 252px;
-              height: 42px;
-              color: #fff;
-              background-color: black;
-            "
+            style="width: 220px; color: #fff; background-color: black"
             @search="onSearch"
             class="search-input"
-          /> -->
+          />
         </a-col>
       </row>
     </div>
