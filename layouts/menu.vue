@@ -9,12 +9,11 @@
             class="logo-class"
           />
         </a-col>
-        <a-col class="">
+        <a-col class="mt-2 ml-14 mr-14">
           <a-input-search
-            placeholder="input search text"
-            style="width: 220px; color: #fff; background-color: black"
+            placeholder="Search"
+            style="width: 220px"
             @search="onSearch"
-            class="search-input"
           />
         </a-col>
       </row>
