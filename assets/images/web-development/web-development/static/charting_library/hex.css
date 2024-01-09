@@ -1,0 +1,30 @@
+.theme-dark:root {
+  --tv-color-pane-background: #0C1014;
+  --tv-color-platform-background: #12181D;
+  --tv-color-toolbar-button-text-active: #FFA500;
+  --tv-color-toolbar-button-text-active-hover: #FFA500;
+  --tv-color-toolbar-toggle-button-background-active: #ffa60080;
+  --tv-color-toolbar-toggle-button-background-active-hover: #ffa60080;
+  --tv-color-toolbar-button-text: #ADB1B8;
+  --tv-color-popup-element-background-active:#ffa60040;
+  --tv-color-popup-background:var(--tv-color-platform-background);
+  --tv-color-popup-element-text:var(--tv-color-toolbar-button-text);
+}
+
+/* 0C1014 */
+.toolbar-qqNP9X6e .value-gwXludjS {
+  text-transform: uppercase;
+}
+html.theme-dark .container-zLVm6B4t {
+  background: var(--tv-color-platform-background);
+}
+#overlap-manager-root .label-jFqVJoPk {
+  text-transform: capitalize;
+}
+
+.customButton-qqNP9X6e {
+  color: #8c9096;
+  padding: 0 10px;
+  font-weight: 600 !important;
+  font-size: 12px;
+}

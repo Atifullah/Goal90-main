@@ -1,0 +1,627 @@
+@import "assets/variables/light.scss";
+
+#home {
+    background: $white;
+    .mt-10 {
+        margin-top: 100px;
+    }
+    .mb-10 {
+        margin-bottom: 100px;
+    }
+    .pb-10 {
+        padding-bottom: 100px;
+    }
+    .mt-6 {
+        margin-top: 60px;
+    }
+    .mb-6 {
+        margin-bottom: 60px;
+    }
+    .sec-price {
+        font-size: $fs_xs;
+        color: $text-grey;
+        white-space: nowrap;
+    }
+    .trading-text {
+        font-size: 40px;
+    }
+    .trading-price {
+        font-size: $fs_7xl;
+    }
+    .up-down {
+        color: #0ecb81;
+    }
+    .product-title {
+        font-size: $fs_2xl;
+    }
+    // top banner
+    .home-slider {
+        position: relative;
+        .home-heading {
+            font-size: 45px;
+            line-height: 67px;
+        }
+        .home-desc {
+            font-size: $fs_sm;
+            color: $text-grey;
+        }
+        .home-input {
+            height: 54px !important;
+            border-radius: 6px !important;
+            border: 1px solid #e5e7eb;
+            font-size: 1rem !important;
+            color: $heading-color;
+            &::placeholder {
+                font-size: 1rem !important;
+                color: $text-grey;
+            }
+        }
+        .join-now {
+            height: 54px !important;
+            border-radius: 6px !important;
+        }
+        .slick-track {
+            height: 435px !important;
+        }
+        .home-download-icon-btn{
+            display: flex;
+            justify-content: flex-start;
+            border-radius: 8px;
+            border: 1px solid #e5e7eb;
+            margin-right: 11px;
+            padding: 11px;
+            height: 48px;
+            width: 48px;
+        }
+        
+        .apps-icon {
+            display: flex;
+            justify-content: flex-start;
+            margin-top: 15px;
+            .icon-box {
+                border-radius: 8px;
+                border: 1px solid #e5e7eb;
+                margin-right: 11px;
+                padding: 12px;
+                height: 48px;
+                width: 48px;
+            }
+        }
+        .slick-list {
+            height: 435px;
+        }
+
+        .ant-carousel-vertical .slick-dots li {
+            width: 9px;
+            height: 9px;
+            border: 1px solid #f1f1f1;
+            border-radius: 50px;
+            background-color: #f1f1f1 !important;
+        }
+
+        .ant-carousel-vertical .slick-dots li button {
+            width: 9px;
+            height: 9px;
+            border: 1px solid #f1f1f1;
+            border-radius: 50px;
+            background-color: #f1f1f1 !important;
+        }
+
+        .ant-carousel-vertical .slick-dots li.slick-active button {
+            width: 9px;
+            height: 9px;
+            border: 1px solid $primary-color;
+            border-radius: 50px;
+            background-color: #fff !important;
+        }
+
+        li.slick-active {
+            width: 9px;
+            height: 9px;
+            border: 1px solid $primary-color;
+            border-radius: 50px;
+            background-color: #fff;
+        }
+        .ant-carousel-vertical .slick-dots-right {
+            right: 35px;
+        }
+        .slider-top-arrow {
+            position: absolute;
+            top: 120px;
+            right: 22px;
+        }
+
+        .slider-down-arrow {
+            position: absolute;
+            bottom: 120px;
+            right: 22px;
+        }
+    }
+    // news alert
+
+    .news-alert {
+        border-radius: 6px;
+        background: #fafafa;
+        display: block !important;
+        .ant-card-body {
+            padding: 16px 20px 10px 20px;
+        }
+        :deep(.ant-card-body) {
+            padding: 4px 12px !important;
+        }
+
+        .news-text {
+            font-size: 1rem;
+            color: #222138;
+        }
+
+        .read-more {
+            font-size: $fs_sm;
+            color: #222138;
+            margin-top: 3px;
+        }
+    }
+    // bottom banner
+    .bottom-banner {
+        position: relative;
+        .swiper-container-img {
+            border-radius: 3px !important;
+            padding: 0 !important;
+            margin-right: 30px;
+        }
+        .VueCarousel-navigation-prev {
+            left: -10px;
+        }
+        .VueCarousel-navigation-next {
+            right: -10px;
+        }
+    }
+    // popular cryptocurrencies
+    .popular-currencies {
+        font-size: 40px;
+        margin-bottom: 24px;
+    }
+    .left-card {
+        border-radius: 8px;
+        border: 1px solid #e5e7eb;
+        .ant-card-body {
+            padding: 28px 28px 12px 28px;
+            .ant-tabs-nav-wrap {
+                padding: 0;
+            }
+         
+            .ant-tabs-nav.ant-tabs-nav-animated {
+                background-color: transparent;
+            }
+            .ant-tabs-nav .ant-tabs-tab {
+                background-color: transparent;
+                font-size: 1rem;
+                font-weight: 500;
+                color: $text-grey;
+            }
+            .ant-tabs-ink-bar.ant-tabs-ink-bar-animated {
+                width: 26px !important;
+                background: $primary-color !important;
+                height: 3px;
+                margin-left: 18px;
+            }
+            .ant-tabs-nav .ant-tabs-tab:first-child {
+                margin-left: 0px !important;
+                padding-left: 0 !important;
+            }
+
+            .perpetual {
+                color: $text-grey;
+            }
+            .ant-table-thead > tr > th {
+                border-bottom: none;
+            }
+            .ant-table-thead > tr > th:first-child {
+                padding-left: 5px;
+            }
+            .ant-table-thead > tr > th:last-child {
+                padding-right: 5px;
+            }
+            .ant-table-tbody > tr > td:first-child {
+                padding-left: 5px;
+            }
+            .ant-table-tbody > tr > td:last-child {
+                padding-right: 5px;
+            }
+            .ant-table-thead
+                > tr.ant-table-row-hover:not(.ant-table-expanded-row):not(.ant-table-row-selected)
+                > td,
+            .ant-table-tbody
+                > tr.ant-table-row-hover:not(.ant-table-expanded-row):not(.ant-table-row-selected)
+                > td,
+            .ant-table-thead
+                > tr:hover:not(.ant-table-expanded-row):not(.ant-table-row-selected)
+                > td,
+            .ant-table-tbody
+                > tr:hover:not(.ant-table-expanded-row):not(.ant-table-row-selected)
+                > td {
+                background-color: #fff;
+            }
+            .trade-btn {
+                height: 28px !important;
+                border: 1px solid #e2e5e9 !important;
+                border-radius: 4px !important;
+                &:hover {
+                    background-color: $primary-color;
+                    color: $white;
+                    border: 1px solid $primary-color !important;
+                }
+            }
+        }
+    }
+    // copy trading
+    .copy-trading {
+        border-radius: 12px;
+        background: #fafafa;
+        padding: 60px 0;
+
+        .trading-desc {
+            font-size: $fs_2xl;
+            margin-bottom: 40px;
+        }
+        .trades-price {
+            display: flex;
+            justify-content: flex-start;
+            .trade-box {
+                margin-right: 50px;
+            }
+        }
+
+        .traders-txt {
+            font-size: 1rem;
+            color: $text-grey;
+            margin-bottom: 40px;
+        }
+        .primary-btn {
+            height: 40px !important;
+            border-radius: 32px;
+        }
+        .mr-30 {
+            margin-right: 30px;
+        }
+        .white-card {
+            border: none;
+            width: 295px;
+            .ant-card-body {
+                padding: 25px;
+                .user-name {
+                    font-size: 1rem;
+                    white-space: nowrap;
+                }
+                .copy-btn {
+                    height: 28px !important;
+                    border-radius: 100px;
+                }
+                .user-img-new {
+                    border-radius: 50%;
+                    object-fit: cover;
+                }
+            }
+        }
+    }
+    // product suite
+    .product-suite {
+        .product-card {
+            border-radius: 6px;
+            border: 1px solid #e5e7eb;
+            .ant-card-body {
+                padding: 30px;
+                .product-price {
+                    line-height: 60px;
+                    font-size: $fs_7xl;
+                }
+                .desc-txt {
+                    font-size: 1rem;
+                    line-height: 25px;
+                }
+            }
+        }
+    }
+    // beginners guide
+    .tags {
+        border-radius: 32px;
+        background: #f3f3f3;
+        color: $heading-color;
+        border: none;
+        padding: 3px 12px;
+        position: relative;
+  
+    }
+    .beginner-guide .step-container .step:not(:last-child) .tags:after {
+        content: "";
+        height: 1px;
+        width: 288px;
+        border: 0.6px dashed #e2e2e2;
+        position: absolute;
+        top: 50%;
+        bottom: 50%;
+        transform: translateY(50%);
+        left: 68px;
+        border-style: dashed;
+    }
+    .step-title {
+        line-height: 50px;
+    }
+
+    // community
+    .community {
+        border-radius: 12px;
+        background: #fafafa;
+        padding: 60px 0;
+        .qr-code-sec {
+            display: flex;
+            align-items: center;
+            justify-content: flex-start;
+            .white-qr-code {
+                border-radius: 10px;
+                border: 1px solid #e5e7eb;
+                background: #fff;
+                padding: 20px;
+            }
+            .download-scan-app {
+                font-size: 1rem;
+                color: $text-grey;
+                line-height: 27px;
+            }
+        }
+        .download-sec {
+            margin-top: 30px;
+            display: flex;
+            justify-content: flex-start;
+            align-items: center;
+            .download1 {
+                max-width: 105px;
+                width: 100%;
+                margin-right: 20px;
+                padding: 10px 12px 0px 12px;
+                border: 1px solid transparent;
+
+                &:hover {
+                    padding: 10px 12px 0px 12px;
+                    border: 1px solid #E5E7EB;
+                    border-radius: 10px;
+                }
+                .download-txt {
+                    line-height: 42px;
+                }
+            }
+        }
+        .more-option {
+            margin-top: 30px;
+        }
+        .trading-start-btn {
+            border-radius: 4px !important;
+            height: 43px !important;
+        }
+    }
+
+    .download-popover {
+        max-width: 192px !important;
+        width: 100% !important;
+        top: 0 !important;
+    
+        .ant-popover-inner {
+            background: #ffffff !important;
+            box-shadow: 0px 0px 50px rgba(0, 0, 0, 0.12);
+            border-radius: 9px !important;
+        }
+    
+    .download-txt {
+        font-size: $fs_xs;
+    }
+        .download-app-btn {
+            height: 38px !important;
+            width: 155px !important;
+            border-radius: 4px !important;
+            font-size: $fs_xs;
+        }
+    
+        .ant-popover-inner-content {
+            padding: 0 !important;
+        }
+    }
+    @media screen and (max-width: 1280px) {
+        .trading-price {
+            font-size: $fs_2xl;
+        }
+        .home-slider {
+            .ant-carousel-vertical .slick-dots-right {
+                right: 16px;
+            }
+            .home-heading {
+                font-size: $fs_12xl;
+                line-height: 50px;
+            }
+        }
+        .bottom-banner {
+            position: relative;
+            .swiper-container-img {
+                margin-right: 30px;
+            }
+            .VueCarousel-navigation-prev {
+                left: 50px;
+            }
+            .VueCarousel-navigation-next {
+                right: 50px;
+            }
+        }
+        .beginner-guide .step-container .step:not(:last-child) .tags:after {
+            width: 235px;
+        }
+        .community {
+            
+            .download-sec {
+                .download1 {
+                    margin-right: 16px;
+                }
+            }
+        }
+    }
+    @media screen and (max-width: 1200px) {
+        .home-slider {
+            .ant-carousel .slick-slider {
+                height: 400px !important;
+            }
+            .slick-track {
+                height: 400px !important;
+            }
+            .slider-down-arrow {
+                bottom: 90px;
+            }
+            .slider-top-arrow {
+                top: 90px;
+            }
+            .home-heading {
+                font-size: $fs_9xl;
+                line-height: 50px;
+            }
+        }
+        .bottom-banner {
+            position: relative;
+            .swiper-container-img {
+                margin-right: 34px;
+            }
+        }
+        .top-slider-imgs {
+            height: 400px !important;
+        }
+        .popular-currencies {
+            font-size: $fs_10xl;
+        }
+        .copy-trading .trading-desc {
+            font-size: 1rem;
+        }
+        .trading-price {
+            font-size: $fs_lg;
+        }
+        .trading-text {
+            font-size: $fs_10xl;
+        }
+        .product-title {
+            font-size: 1rem;
+        }
+        .product-suite .product-card .ant-card-body {
+            padding: 16px;
+            .product-price {
+                font-size: $fs_2xl;
+            }
+            img {
+                margin-bottom: 5px !important;
+            }
+            .desc-txt {
+                font-size: $fs_sm;
+            }
+        }
+        .community {
+            .community-left-img {
+                height: 300px !important;
+            }
+            .more-option {
+                margin-top: 20px;
+            }
+            .download-sec {
+                margin-top: 20px;
+                .download1 {
+                    margin-right: 5px;
+                }
+            }
+        }
+        .symbol-txt img {
+            height: 18px;
+            width: 18px;
+        }
+        .beginner-guide .step-container .step:not(:last-child) .tags:after {
+            width: 218px;
+        }
+    }
+    @media screen and (max-width: 1024px) {
+        .home-slider {
+            .left-side {
+                margin-top: 60px !important;
+            }
+            .ant-carousel .slick-slider {
+                height: 300px !important;
+            }
+            .slick-track {
+                height: 300px !important;
+            }
+            .slider-down-arrow {
+                bottom: 50px;
+            }
+            .top-slider-imgs {
+                height: 300px !important;
+            }
+            .slider-top-arrow {
+                top: 50px;
+            }
+        }
+        .product-suite .product-card .ant-card-body {
+            padding: 14px;
+        }
+        .copy-trading {
+            position: relative;
+          .traders-txt {
+                font-size: 0.8rem;
+            }
+            .VueCarousel-navigation-next {
+                right: 28px;
+            }
+        }
+        .product-title {
+            font-size: 0.9rem;
+        }
+        .beginner-guide .step-container .step:not(:last-child) .tags:after {
+            width: 175px;
+        }
+    }
+}
+#bybnq-modal {
+    .ant-modal-content {
+        border-radius: 12px;
+    }
+    .ant-input {
+        height: 54px !important;
+        border-radius: 8px !important;
+    }
+    .ant-btn {
+        border-radius: 8px !important;
+    }
+    .register-btn {
+        height: 54px !important;
+    }
+    .ant-modal-body {
+        padding: 0;
+    .by-bnq-bg {
+        background: url('/images/bu-bnq-bg.png');
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        border-radius: 12px 12px 0 0;
+        padding-bottom: 62px;
+
+      .buy-now-desc {
+        font-size: 20px;
+        color: #fff;
+        line-height: 25px;
+      }
+        .buy-now {
+            font-size: 30px;
+            line-height: 28px;
+            padding: 38px 0 0px 0;
+            color: white;
+            text-align: center
+        }
+    }
+    .high-purchase {
+        font-size: 1rem;
+    }
+    .list-title {
+        line-height: 28px;
+    }
+}
+}

@@ -1,0 +1,1231 @@
+@import "@/assets/variables/light";
+
+#play-card {
+    .chess-txt {
+        color: rgba(255, 255, 255, 0.50);
+        font-size: $fs_xs;
+        font-family: 'roboto';
+
+    }
+    .red-active-color{
+        color: #89211F !important;
+    }
+    .green-active-color{
+        color: #60941B !important;
+    }
+
+    .active-card {
+        // background-color: #191919 !important;
+        // border: 1px solid transparent !important;
+        // border-radius: 15px;
+        // background:
+        //     linear-gradient(to top, #929292, #FF7A00),
+        //     linear-gradient(to top,  #929292, #FF7A00) !important;
+        border: 1px solid transparent;
+        border-radius: 15px;
+        background: linear-gradient(to top, #2E1E0F, #2E1E0F), linear-gradient(to top, #2E1E0F, #FF7A00);
+        background-clip: padding-box, border-box;
+        background-origin: padding-box, border-box
+    }
+
+    .user-num {
+        color: #FFF;
+        font-family: 'roboto';
+        font-size: $fs_xs;
+    }
+
+    .scroll-item {
+        width: 100%;
+        height: 48vh !important;
+        padding-bottom: 5px;
+        overflow-y: auto;
+    }
+
+    .scroll-item::-webkit-scrollbar-track {
+        border-radius: 19px;
+        background-color: transparent;
+    }
+
+    .scroll-item::-webkit-scrollbar {
+        width: 8px;
+        background-color: transparent;
+    }
+
+    .scroll-item::-webkit-scrollbar-thumb {
+        border-radius: 19px;
+        background-color: #3D3D3D;
+    }
+
+    .nickname {
+        color: rgba(255, 255, 255, 0.50) !important;
+        font-weight: 400 !important;
+    }
+
+    .timer-divider {
+        background: rgba(255, 255, 255, 0.20);
+    }
+
+    .ant-input-affix-wrapper .ant-input-prefix {
+        top: 47%;
+    }
+
+    .price-txt {
+        color: rgba(255, 255, 255, 0.50) !important;
+    }
+
+    .blockchain-heading {
+        font-size: $fs-base;
+        font-family: 'Plaguard';
+        color: #fff;
+
+    }
+
+    .login-user {
+        color: rgba(255, 255, 255, 0.50);
+
+        a {
+            color: rgba(255, 255, 255, 0.50);
+            font-family: 'roboto';
+            font-size: $fs-base;
+            font-style: normal;
+            font-weight: 400;
+
+            &:hover {
+                color: #FF7A00 !important;
+            }
+        }
+    }
+
+    .game-rules-txt {
+        color: #FFF;
+        font-size: $fs-base;
+        font-family: 'roboto';
+
+        span {
+            text-decoration: underline;
+            cursor: pointer;
+        }
+    }
+
+
+    .game-seccion {
+        color: rgba(255, 255, 255, 0.50);
+        font-family: 'roboto';
+        font-size: $fs-base;
+        font-style: normal;
+        font-weight: 400;
+    }
+
+    .common-btn {
+        height: 39px !important;
+        border-radius: 8px;
+        border: 1px solid #FF7A00;
+        background: #FF7A00;
+        color: $white;
+        font-family: 'roboto';
+        font-size: $fs_xmd !important;
+    }
+
+    .transfer-btn {
+        border: 1px solid #525150 !important;
+        background: #383838 !important;
+
+        &:hover {
+            border: 1px solid #FF7A00 !important;
+            background: #FF7A00 !important;
+        }
+    }
+
+    .view-btn {
+        height: 28px !important;
+    }
+
+    .top-header {
+        background-color: #191919;
+        border: 1px solid transparent;
+        border-radius: 15px;
+        background:
+            linear-gradient(to top, #191919, #191919),
+            linear-gradient(to top, #191919, #333333);
+        background-clip: padding-box, border-box;
+        background-origin: padding-box, border-box;
+        border-radius: 15px;
+
+        .card-item {
+            position: relative;
+
+            &:after {
+                content: "";
+                width: 44px;
+                background: transparent;
+                color: white;
+                z-index: 97 !important;
+                position: absolute;
+                right: -46px;
+                top: 50%;
+                bottom: 50%;
+                border: 1px dashed #8C8C8C;
+            }
+        }
+
+        .ant-card-body {
+            padding: 20px 11px;
+
+            .top-header-card {
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+
+                .small-card {
+                    border-radius: 15px;
+                    padding: 20px 15px;
+                    background: linear-gradient(180deg, rgba(215, 215, 215, 0.15) 0%, rgba(35, 35, 35, 0.00) 100%);
+                    width: 209px;
+
+                    .first-item1 {
+                        color: #FFFFFF;
+                        font-size: $fs-base;
+                        font-family: 'Roboto';
+                        font-weight: 900;
+                        line-height: 19.75px;
+
+                    }
+
+                    .first-item {
+                        color: rgba(255, 255, 255, 0.50);
+                        font-size: $fs_sm;
+                        font-family: 'Plaguard';
+                    }
+
+                    .green-txt {
+                        color: #70FF00 !important;
+                        font-family: 'roboto';
+
+                    }
+
+                    .sec-txt {
+                        color: #FFF;
+                        font-size: $fs_md;
+                        font-family: 'roboto';
+
+                    }
+                }
+            }
+        }
+    }
+
+    .center-card-table {
+        min-height: 425px !important;
+
+        .ant-empty-normal {
+            margin: 85px 0;
+        }
+    }
+    
+        .hash-codes-pagination ul {
+            width: fit-content;
+            float: right;
+            font-size: $fs_xs;
+        }
+        
+        .hash-codes-pagination ul li {
+            margin: 0 2px !important;
+        }
+        
+        .hash-codes-pagination ul li.ant-pagination-jump-prev,
+        .hash-codes-pagination ul li.ant-pagination-jump-next {
+            min-width: 20px;
+            color: white !important;
+        }
+        
+        .hash-codes-pagination ul li.ant-pagination-jump-prev span,
+        .hash-codes-pagination ul li.ant-pagination-jump-next span {
+            color: white !important;
+        }
+        
+        li.ant-pagination-item {
+            margin: 0 5px;
+        }
+        
+        li.ant-pagination-item a {
+            color: #fff;
+            opacity: 0.5;
+        
+        }
+        
+        .ant-pagination-item a:hover {
+            color: #fff !important;
+            opacity: 100% !important;
+        }
+        
+        .ant-pagination-item a:active {
+            color: #fff !important;
+            opacity: 100% !important;
+        }
+        
+        .ant-pagination-item:focus a,
+        .ant-pagination-item:hover a {
+            color: #fff !important;
+            opacity: 0.5 !important;
+        }
+        
+        a.ant-pagination-item-link {
+            color: #fff;
+        }
+        
+        i.anticon.anticon-right {
+            color: #fff;
+            opacity: 0.5;
+        }
+        
+        .ant-pagination-item-active {
+            background: #252525 !important;
+        
+        }
+        
+        .ant-pagination-item-active a {
+            color: #fff;
+        
+        }
+
+    .right-card {
+        height: auto !important;
+
+
+
+    }
+
+    // .bottom-left-card {
+    //     min-height: 365px !important;
+
+    // }
+    .left-card {
+        border: 1px solid transparent;
+        border-radius: 15px;
+        min-height: 495px;
+        background:
+            linear-gradient(to top, #191919, #191919),
+            linear-gradient(to top, #191919, #333333);
+        background-clip: padding-box, border-box;
+        background-origin: padding-box, border-box;
+
+        .ant-card-body {
+            padding: 20px 0px;
+
+            .room-card {
+                position: relative;
+
+                .room-info-txt {
+                    top: 11px !important;
+                    left: 56px !important;
+
+                }
+
+                .start-game {
+                    top: 8.5px !important;
+                    left: 45px !important;
+                }
+
+                .game-rom-txt {
+                    position: absolute;
+                    color: #FFF;
+                    font-family: 'plaguard';
+                    font-size: $fs-base;
+                    top: 8px;
+                    left: 57px;
+                }
+            }
+
+            .ant-select-selection {
+                background-color: transparent;
+                border: none;
+                color: rgba(255, 255, 255, 0.50);
+                font-family: 'roboto';
+                font-size: $fs_sm;
+                font-weight: 400;
+            }
+
+            .ant-select-selection-selected-value {
+                color: rgba(255, 255, 255, 0.50);
+                font-family: 'roboto';
+                font-size: $fs_sm;
+                font-weight: 400;
+            }
+
+            .ant-select-dropdown {
+                border-radius: 7px !important;
+                background: #191919 !important;
+                box-shadow: 0px 4px 28px 0px rgba(0, 0, 0, 0.41) !important;
+            }
+
+            .game-divider {
+                background: rgba(129, 129, 129, 0.10);
+                margin: 20px 0;
+            }
+
+            .all-btn {
+                .ant-radio-button-wrapper {
+                    padding-right: 43px !important;
+                }
+            }
+
+            .right-radiobtn {
+                .ant-radio-button-wrapper {
+                    padding: 0px 9px !important;
+                    border-radius: 4px;
+                    border: 1px solid #525150 !important;
+                    background: #383838 !important;
+                    margin-left: 12px;
+                    height: 28px !important;
+                    line-height: 28px !important;
+
+
+                }
+
+                label.ant-radio-button-wrapper.ant-radio-button-wrapper-checked {
+                    position: relative;
+                    border: 1px solid #FF7A00 !important;
+                    background: rgba(255, 122, 0, 0.12) !important;
+                    padding: 0px 12px 0px 6px !important;
+                    color: #fff !important;
+                }
+
+                .top-tick-img {
+
+                    position: absolute;
+                    bottom: 10px;
+                    left: 40px;
+
+                }
+            }
+
+            .ant-radio-button-wrapper {
+                color: #FFF !important;
+                font-family: 'roboto';
+                font-size: $fs_sm;
+                font-weight: 400;
+                background: transparent !important;
+                border: none !important;
+                padding: 0;
+                padding-right: 19px;
+                box-shadow: none;
+                height: 30px !important;
+                line-height: 32px !important;
+
+            }
+
+            label.ant-radio-button-wrapper.ant-radio-button-wrapper-checked {
+                color: #FF7A00 !important;
+            }
+
+            .ant-radio-button-wrapper:not(:first-child)::before {
+                background-color: transparent !important;
+            }
+
+            .more-txt {
+                color: rgba(255, 255, 255, 0.50);
+                font-family: 'roboto';
+                font-size: $fs_sm;
+            }
+
+            .ant-input-affix-wrapper .ant-input:not(:first-child) {
+                padding-left: 45px !important;
+            }
+
+            .search-data {
+                margin-top: 20px;
+
+                input.ant-input {
+                    border-radius: 101px;
+                    background: #2C2C2C;
+                    border: none;
+                    color: rgba(255, 255, 255, 0.50);
+                    font-family: 'roboto';
+                    font-size: $fs_sm;
+
+                    &::placeholder {
+                        color: rgba(255, 255, 255, 0.50);
+                        font-family: 'roboto';
+                        font-size: $fs_sm;
+                    }
+                }
+
+            }
+        }
+
+
+        .table-data {
+            .center-table {
+                .ant-table-tbody>tr>td {
+                    border-bottom: none !important;
+                }
+            }
+
+            .ant-table-placeholder {
+                background-color: transparent;
+                border-top: 0;
+                border-bottom: 0;
+
+                .ant-empty-description {
+                    color: rgba(255, 255, 255, 0.50);
+                }
+            }
+
+            .ant-table-thead>tr>th:first-child {
+                padding-left: 15px !important;
+            }
+
+            .ant-table-thead>tr>th:last-child {
+                padding-right: 0 !important;
+            }
+
+            .ant-table-thead>tr>th {
+                color: rgba(255, 255, 255, 0.50);
+                font-family: 'roboto';
+                font-size: $fs_xmd;
+                font-weight: 400;
+                background-color: transparent !important;
+                border-bottom: none;
+                padding: 20px 5px 0px 5px;
+
+            }
+
+            .ant-table-thead>tr.ant-table-row-hover:not(.ant-table-expanded-row):not(.ant-table-row-selected)>td,
+            .ant-table-tbody>tr.ant-table-row-hover:not(.ant-table-expanded-row):not(.ant-table-row-selected)>td,
+            .ant-table-thead>tr:hover:not(.ant-table-expanded-row):not(.ant-table-row-selected)>td,
+            .ant-table-tbody>tr:hover:not(.ant-table-expanded-row):not(.ant-table-row-selected)>td {
+                background-color: #212121 !important;
+            }
+
+            .ant-table-fixed-header>.ant-table-content>.ant-table-scroll>.ant-table-body {
+                background: #191919 !important;
+                margin-top: 45px;
+
+            }
+
+            .ant-table-body {
+                width: 100%;
+                height: 394px !important;
+                padding-bottom: 5px;
+                overflow: hidden;
+            }
+
+            .ant-table-body::-webkit-scrollbar-track {
+                border-radius: 19px;
+                background-color: transparent !important;
+            }
+
+            .ant-table-body::-webkit-scrollbar {
+                width: 8px;
+                background-color: transparent;
+            }
+
+            .ant-table-body::-webkit-scrollbar-thumb {
+                border-radius: 19px;
+                background-color: #3D3D3D;
+                ;
+            }
+
+            .ant-table-fixed-header .ant-table-scroll .ant-table-header {
+                background: #191919 !important;
+                // border-bottom: 1px solid transparent !important;
+                overflow: hidden !important;
+
+            }
+
+            .ant-table-header {
+                background: transparent !important;
+            }
+
+            .ant-table-tbody>tr>td {
+                color: #FFF;
+                font-family: 'roboto';
+                font-size: $fs_xmd;
+                font-weight: 400;
+                background-color: transparent !important;
+                padding: 18px 5px 18px 5px;
+                border-bottom: 1px solid rgba(129, 129, 129, 0.10) !important;
+
+            }
+
+            i.anticon.anticon-down.ant-select-arrow-icon {
+                color: red !important;
+            }
+
+            .ant-table-tbody>tr>td:first-child {
+                padding-left: 15px;
+            }
+
+            .ant-table-body {
+                height: auto !important;
+            }
+
+            .ant-table-tbody>tr>td:last-child {
+                padding-right: 0;
+            }
+
+            tbody.ant-table-tbody {
+                background: transparent !important;
+
+            }
+
+            .ant-table-tbody tr:last-child td {
+                border-bottom: none !important;
+            }
+
+            .ant-table-thead>tr.ant-table-row-hover:not(.ant-table-expanded-row):not(.ant-table-row-selected)>td,
+            .ant-table-tbody>tr.ant-table-row-hover:not(.ant-table-expanded-row):not(.ant-table-row-selected)>td,
+            .ant-table-thead>tr:hover:not(.ant-table-expanded-row):not(.ant-table-row-selected)>td,
+            .ant-table-tbody>tr:hover:not(.ant-table-expanded-row):not(.ant-table-row-selected)>td {
+                background-color: transparent;
+            }
+
+            .user-name {
+                color: #FFF;
+                font-family: 'plaguard';
+                font-size: $fs_xmd;
+                font-weight: 400;
+            }
+
+            .room-id {
+                color: rgba(255, 255, 255, 0.50);
+                font-family: 'roboto';
+                font-size: $fs_xs;
+                
+            }
+
+            .price-txt {
+                color: rgba(255, 255, 255, 0.50) !important;
+            }
+
+            .user-price {
+                color: #FFF;
+                font-family: 'roboto';
+                font-size: $fs_sm;
+            }
+        }
+
+        .info-label {
+            color: rgba(254, 254, 254, 0.50);
+            font-family: 'roboto';
+            font-size: $fs_sm;
+            line-height: 20px;
+        }
+
+
+        .right-form {
+            .arrow {
+                cursor: pointer;
+                display: inline-block;
+                width: 80%;
+                height: 45px;
+                text-align: center;
+                font-size: $fs-base;
+                font-family: 'plaguard';
+                margin-left: 25px;
+                margin-right: 25px;
+                position: relative;
+                line-height: 45px;
+
+                // padding-left: 1em;
+                // padding-right: 2em;
+                background: #FF7A00;
+                color: #fff;
+                box-shadow: (0px 4px 17px rgba(255, 169, 41, 0.23));
+
+                &:after {
+                    // triangle hover color
+                    border-left: 20px solid #FF7A00;
+
+                }
+
+                &:before {
+                    // triangle hover color
+                    border-right: 20px solid #FF7A00;
+                }
+
+            }
+
+            .arrow:after {
+                // the triangle
+                content: "";
+                position: absolute;
+                border-bottom: 22.5px solid transparent;
+                border-top: 22.5px solid transparent;
+                height: 0px;
+                width: 0px;
+                margin-right: -20px;
+                right: 0;
+            }
+
+            .arrow:before {
+                // the triangle
+                content: "";
+                position: absolute;
+                border-bottom: 22.5px solid transparent;
+                border-top: 22.5px solid transparent;
+                height: 0px;
+                width: 0px;
+                margin-left: -20px;
+                left: 0;
+            }
+
+
+            input.ant-input {
+                border-radius: 6px;
+                background: #2F2E2E;
+                border: none;
+                font-family: 'roboto';
+                font-size: $fs_sm !important;
+                font-weight: 500 !important;
+                color: #FFF6F6;
+                opacity: 50% !important;
+
+                &::placeholder {
+                    font-family: 'roboto';
+                    font-size: $fs_sm;
+                    font-weight: 500;
+                    color: #FFF6F6;
+                }
+            }
+
+            .ant-input-affix-wrapper .ant-input:not(:first-child) {
+                padding-left: 30px !important;
+            }
+
+            .ant-select-selection.ant-select-selection--single {
+                border-radius: 6px;
+                background: #2F2E2E;
+                border: none;
+                font-family: 'roboto';
+                font-size: $fs_sm;
+                font-weight: 500;
+                color: #fff;
+                box-shadow: none;
+
+            }
+
+            .ant-select-selection-selected-value {
+                color: #FFF;
+            }
+
+            i.anticon.anticon-caret-down.ant-select-arrow-icon {
+                color: #7D7D7D;
+                font-size: $fs_md;
+            }
+
+            i.anticon.anticon-eye.ant-input-password-icon {
+                color: #7D7D7D;
+                font-size: $fs_md;
+            }
+
+            i.anticon.anticon-eye-invisible.ant-input-password-icon {
+                color: #7D7D7D;
+                font-size: $fs_md;
+            }
+        }
+
+        .ant-tabs-bar {
+            border-bottom: 1px solid rgba(129, 129, 129, 0.10) !important;
+        }
+
+        .ant-tabs-ink-bar.ant-tabs-ink-bar-animated {
+            height: 4px !important;
+            background: #FF7A00 !important;
+            bottom: 3px !important;
+            border-radius: 8px 8px 0 0;
+            box-shadow: (0px 4px 17px rgba(255, 169, 41, 0.23));
+            width: 40px !important;
+            left: 10% !important;
+            right: 0 !important;
+            // text-align: center;
+        }
+
+        .ant-tabs-nav-wrap {
+            padding: 0 !important;
+
+            .ant-tabs-nav.ant-tabs-nav-animated {
+                background-color: transparent !important;
+            }
+
+            .ant-tabs-tab {
+                background-color: transparent !important;
+                color: rgba(255, 255, 255, 0.50);
+                font-family: 'roboto';
+                font-size: $fs-base;
+                font-weight: 400;
+                padding: 0 12px 20px 12px !important;
+            }
+
+            // .ant-tabs-tab:first-child {
+            //     padding-left: 0 !important;
+            // }
+
+            .ant-tabs-tab-active.ant-tabs-tab {
+                color: #fff !important;
+            }
+        }
+    }
+
+    .center-card {
+        border: 1px solid transparent;
+        border-radius: 15px;
+        background:
+            linear-gradient(to top, #191919, #191919),
+            linear-gradient(to top, #191919, #333333);
+        background-clip: padding-box, border-box;
+        background-origin: padding-box, border-box;
+
+        .ant-card-body {
+            padding: 20px;
+
+            .join-btn {
+                cursor: pointer;
+                display: inline-block;
+                width: 120px;
+                height: 33px;
+                text-align: center;
+                font-size: $fs-base;
+                font-family: 'plaguard';
+                margin: 0 auto;
+                position: relative;
+                line-height: 33px;
+                margin: 0 auto;
+                background: rgba(255, 169, 41, 0.23);
+
+                color: #fff;
+
+                &:after {
+                    // triangle hover color
+                    border-left: 8px solid rgba(255, 169, 41, 0.23);
+
+                }
+
+                &:before {
+                    // triangle hover color
+                    border-right: 8px solid rgba(255, 169, 41, 0.23);
+                }
+
+            }
+
+            .join-btn:after {
+                // the triangle
+                content: "";
+                position: absolute;
+                border-bottom: 16.8px solid transparent;
+                border-top: 16.8px solid transparent;
+                height: 0px;
+                width: 0px;
+                margin-right: -8px;
+                right: 0;
+            }
+
+            .join-btn:before {
+                // the triangle
+                content: "";
+                position: absolute;
+                border-bottom: 16.8px solid transparent;
+                border-top: 16.8px solid transparent;
+                height: 0px;
+                width: 0px;
+                margin-left: -8px;
+                left: 0;
+            }
+
+            .join-btn:hover,
+            .join-btn:active {
+                background: rgba(255, 169, 41, 0.23);
+                border-left: 0;
+                border-right: 0;
+
+                &:after {
+                    // triangle hover
+                    border-left: 8px solid rgba(255, 169, 41, 0.23);
+                }
+
+                &:before {
+                    // triangle hover color
+                    border-right: 8px solid rgba(255, 169, 41, 0.23);
+                }
+            }
+
+            .block-sec-txt {
+                color: rgba(255, 255, 255, 0.50);
+                font-family: 'roboto';
+                font-size: $fs_sm;
+            }
+
+            .start-txt {
+                color: #70FF00;
+                font-family: 'roboto';
+                font-size: $fs-base;
+
+            }
+
+            .play-card-box {
+                position: relative;
+
+                .box2-bg {
+                    background-image: none !important;
+                    height: 0 !important;
+                    height: 100px !important;
+
+                    .ant-tag {
+                        margin-top: 10px !important;
+                    }
+                }
+
+                .betting_false {
+                    margin-bottom: -70px;
+                }
+
+                .box-bg {
+                    background-image: url('/images/circel.png');
+                    background-position: center;
+                    background-repeat: no-repeat;
+                    background-size: cover;
+                    height: 160px;
+                    text-align: center;
+
+                    .orange-tag {
+                        border: 0.6px solid #FEE88D !important;
+                        background: rgba(255, 169, 41, 0.47) !important;
+                    }
+
+                    .red-tag {
+                        border: 0.6px solid #FE8D8D !important;
+                        background: rgba(255, 41, 41, 0.47) !important;
+                    }
+
+                    .ant-tag-profit {
+                        padding-left: 0;
+                        height: 24px;
+                        line-height: 22.5px;
+                        border-radius: 57px;
+                        border: 0.6px solid #60941B;
+                        background: rgba(112, 255, 0, 0.47);
+                        color: #FFF;
+                        font-family: 'roboto';
+                        font-size: $fs_sm;
+                        font-weight: 600;
+                        padding-right: 10px;
+                        margin-top: 68px;
+                        img {
+                           margin-bottom: 2px;
+                        }
+                    }
+
+                    .ant-tag-loss {
+                        padding-left: 0;
+                        height: 24px;
+                        line-height: 22.5px;
+                        border-radius: 57px;
+                        border: 0.6px solid #89211F;
+                        background: #89211F;
+                        color: #FFF;
+                        font-family: 'roboto';
+                        font-size: $fs_sm;
+                        font-weight: 600;
+                        padding-right: 10px;
+                        margin-top: 68px;
+                        img {
+                            margin-bottom: 2px;
+                         }
+                    }
+                }
+
+                .card-box {
+                    display: flex;
+                    justify-content: space-between;
+                    max-width: 200px;
+                    width: 100%;
+                    margin: -45px auto 0 auto;
+                    position: relative;
+                    z-index: 1;
+
+                    .first-card {
+                        max-width: 32px;
+                    }
+
+                    .last-card {
+                        max-width: 70px;
+                        width: 100%;
+                    }
+
+
+                }
+
+                .card-txt {
+                    margin-top: -23px;
+                    z-index: 1;
+                    position: relative;
+                    // height: 25px;
+
+                    .gold-bull {
+                        color: #FF7A00;
+                        font-family: 'luckiest-guy';
+                        font-size: $fs_7xl;
+                        text-transform: uppercase;
+                        text-align: center;
+                        margin: 0 auto; 
+                        // margin-left: 10px;
+                        box-shadow: 0px 4px 36px 0px rgba(0, 0, 0, 1);
+                        line-height: 1;
+                        text-shadow: -3px -3px 0px white, 3px -3px 0px white, -3px 3px 0px white, 3px 3px 0px white ;
+                        background-clip: text;
+                        -webkit-background-clip: text;
+                        width: fit-content;
+                        box-shadow: 0px 4px 17px 0px #000;
+                    }
+
+                    .bull-nine {
+                        color: #FF7A00;
+                        text-shadow: 0px 4px 17px black !important;
+                        font-family: 'luckiest-guy';
+                        font-size: $fs_7xl;
+                        text-transform: uppercase;
+                        text-align: center;
+                        line-height: 1;
+                        -webkit-text-stroke: 2px #fff;
+
+                    }
+                }
+
+                .gray-card-box {
+                    margin-top: -8px;
+                    position: relative;
+
+                }
+
+                .gold-card-data {
+                    position: absolute;
+                    top: 28px;
+                    left: 17px;
+                    width: 100%;
+
+
+
+                    .user-content {
+                        padding-top: 24px;
+                    }
+
+                    .nickname-box {
+                        padding-top: 10px;
+                    }
+                }
+            }
+        }
+    }
+
+}
+
+.ant-select-dropdown.ant-select-dropdown--single.ant-select-dropdown--empty.ant-select-dropdown-placement-bottomLeft {
+    width: 136px !important;
+    border-radius: 7px !important;
+    background: #191919 !important;
+    box-shadow: 0px 4px 28px 0px rgba(0, 0, 0, 0.41) !important;
+}
+
+.ant-select-dropdown.coin-play-drop.ant-select-dropdown--single.ant-select-dropdown-placement-bottomLeft {
+    border: 1px solid #353535;
+    border-radius: 8px;
+    background-color: #191919;
+
+    li.ant-select-dropdown-menu-item {
+        color: rgba(254, 254, 254, 0.50);
+        font-family: 'roboto';
+        font-size: $fs_xs;
+        font-weight: 400;
+    }
+
+    .ant-select-dropdown-menu-item:hover:not(.ant-select-dropdown-menu-item-disabled) {
+        background: #383838;
+        color: rgba(254, 254, 254, 0.50);
+    }
+
+    .ant-select-dropdown-menu-item-selected {
+        background: #191919;
+        color: rgba(254, 254, 254, 0.50);
+    }
+}
+
+.ant-tooltip.play-info-tip.ant-tooltip-placement-bottom {
+    width: 250px !important;
+
+    .ant-tooltip-inner {
+        border: 1px solid transparent;
+        border-radius: 15px;
+        background:
+            linear-gradient(to top, #191919, #191919),
+            linear-gradient(to top, #191919, #333333);
+        background-clip: padding-box, border-box;
+        background-origin: padding-box, border-box;
+        padding: 7px 25px 7px 12px;
+
+        span {
+            color: rgba(254, 254, 254, 0.50);
+            font-family: 'roboto';
+            font-size: $fs_xs;
+            font-weight: 400;
+        }
+
+    }
+
+    .ant-tooltip-arrow::before {
+        background-color: #353535 !important;
+        width: 10px;
+        height: 10px;
+    }
+ 
+}
+
+.ant-select-dropdown.currency-list-dropdown.ant-select-dropdown--single.ant-select-dropdown-placement-bottomLeft {
+    width: 150px !important;
+    left: 180px !important;
+    border-radius: 7px;
+    background: #191919;
+    box-shadow: 0px 4px 28px 0px rgba(0, 0, 0, 0.41);
+
+    .ant-input {
+        height: 30px !important;
+        border-radius: 101px;
+        background: #2C2C2C;
+        /* Shadow / xs */
+        box-shadow: 0px 1px 2px 0px rgba(16, 24, 40, 0.05);
+        color: #fff;
+        border: 1px solid #3D3D3D !important;
+
+        &::placeholder {
+            color: rgba(254, 254, 254, 0.50);
+
+        }
+    }
+
+    .ant-select-dropdown-content {
+        border-radius: 7px;
+        padding: 7px 0;
+        background: #191919;
+        box-shadow: 0px 4px 28px 0px rgba(0, 0, 0, 0.41);
+
+        li.ant-select-dropdown-menu-item {
+            color: rgba(254, 254, 254, 0.50);
+            font-family: 'roboto';
+            font-size: $fs_xs;
+            font-weight: 400;
+        }
+    }
+
+    .ant-select-dropdown-menu-item-selected {
+        background: #191919;
+        color: rgba(254, 254, 254, 0.50);
+    }
+
+    .ant-select-dropdown-menu-item-active:not(.ant-select-dropdown-menu-item-disabled) {
+        background: #383838 !important;
+        color: rgba(254, 254, 254, 0.50) !important;
+    }
+
+    .ant-select-dropdown-menu {
+        width: 100%;
+        height: 250 !important;
+        padding-bottom: 5px;
+        overflow-y: auto;
+        margin-top: 10px;
+    }
+
+    .ant-select-dropdown-menu::-webkit-scrollbar-track {
+        border-radius: 8px;
+        background-color: #191919 !important;
+    }
+
+    .ant-select-dropdown-menu::-webkit-scrollbar {
+        width: 8px !important;
+        background-color: transparent !important;
+    }
+
+    .ant-select-dropdown-menu::-webkit-scrollbar-thumb {
+        border-radius: 8px;
+        background-color: #3D3D3D;
+    }
+}
+
+
+
+.ant-select-dropdown.right-currency-list.ant-select-dropdown--single.ant-select-dropdown-placement-bottomLeft {
+    border-radius: 7px;
+    background: #191919;
+    box-shadow: 0px 4px 28px 0px rgba(0, 0, 0, 0.41);
+
+    .ant-input {
+        height: 30px !important;
+        border-radius: 101px;
+        background: #2C2C2C;
+        /* Shadow / xs */
+        box-shadow: 0px 1px 2px 0px rgba(16, 24, 40, 0.05);
+        color: #fff;
+        border: 1px solid #3D3D3D !important;
+
+        &::placeholder {
+            color: rgba(254, 254, 254, 0.50);
+
+        }
+    }
+
+    .ant-select-dropdown-content {
+        border-radius: 7px;
+        padding: 7px 0;
+        background: #191919;
+        box-shadow: 0px 4px 28px 0px rgba(0, 0, 0, 0.41);
+
+        li.ant-select-dropdown-menu-item {
+            color: rgba(254, 254, 254, 0.50);
+            font-family: 'roboto';
+            font-size: $fs_xs;
+            font-weight: 400;
+        }
+    }
+
+    .ant-select-dropdown-menu-item-selected {
+        background: #191919;
+        color: rgba(254, 254, 254, 0.50);
+    }
+
+    .ant-select-dropdown-menu-item-active:not(.ant-select-dropdown-menu-item-disabled) {
+        background: #383838 !important;
+        color: rgba(254, 254, 254, 0.50) !important;
+    }
+
+    .ant-select-dropdown-menu {
+        width: 100%;
+        height: 250 !important;
+        padding-bottom: 5px;
+        overflow-y: auto;
+        margin-top: 10px;
+    }
+
+    .ant-select-dropdown-menu::-webkit-scrollbar-track {
+        border-radius: 8px;
+        background-color: #191919 !important;
+    }
+
+    .ant-select-dropdown-menu::-webkit-scrollbar {
+        width: 8px !important;
+        background-color: transparent !important;
+    }
+
+    .ant-select-dropdown-menu::-webkit-scrollbar-thumb {
+        border-radius: 8px;
+        background-color: #3D3D3D;
+    }
+
+
+}
+
+
+#send-play-modal {
+    .balance {
+        label {
+            color: rgba(255, 255, 255, 0.5)
+        }
+    }
+}

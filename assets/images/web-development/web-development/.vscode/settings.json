@@ -1,0 +1,28 @@
+{
+    "i18n-ally.localesPaths": ["locales"],
+    "i18n-ally.keystyle": "nested",
+    "cSpell.words": [
+        "annualinterestrate",
+        "artical",
+        "articlehref",
+        "bannel",
+        "Bannel",
+        "channelid",
+        "getarticle",
+        "getconstantsinfo",
+        "imgurl",
+        "itype",
+        "Nisar",
+        "pagedata",
+        "pageindex",
+        "streagy",
+        "symble",
+        "symbleinfos",
+        "tatistics"
+    ],
+    "cSpell.ignoreWords": [
+        "MMSDK",
+        "paramas"
+    ],
+    "vue-i18n.i18nPaths": "locales"
+}

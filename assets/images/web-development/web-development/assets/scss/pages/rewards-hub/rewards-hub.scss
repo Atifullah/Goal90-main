@@ -1,0 +1,534 @@
+@import "assets/variables/light.scss";
+#rewards-hub {
+    background-color: #fff;
+    .reward-header {
+        background: url("/images/reward-header.png");
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        padding: 30px 0;
+        .heading {
+            font-size: $fs_7xl;
+            line-height: 45px;
+            color: $text-white;
+        }
+        .desc {
+            font-size: $fs-base;
+            color: $text-white;
+            line-height: 22px;
+            max-width: 630px;
+            width: 100%;
+        }
+        .gray-card-bg {
+            background: #3d3d3d;
+            border-radius: 15px;
+            .ant-card-body {
+                padding: 20px;
+                .total-txt {
+                    font-size: $fs_sm;
+                    color: $text-white;
+                }
+                .total-price {
+                    font-size: $fs_2xl;
+                    color: $text-white;
+                }
+                .black-card-bg {
+                    background: #272727;
+                    border-radius: 11px;
+                    margin-top: 22px;
+                    .ant-card-body {
+                        padding: 16px 15px;
+                        .bonus-txt {
+                            font-size: $fs_sm;
+                            color: $text-white;
+                            line-height: 20px;
+                        }
+                        .avail-txt {
+                            font-size: $fs_xs;
+                            color: #6d6d6d;
+                            line-height: 20px;
+                        }
+                        .usdt-txt {
+                            font-size: $fs-base;
+                            color: $text-white;
+                        }
+                    }
+                }
+            }
+        }
+    }
+    .reward-card-sec {
+        .right-top {
+            right: 140px;
+            z-index: 1;
+            position: absolute;
+            width: 40px;
+            height: 40px;
+            background: #fafafa;
+            border-radius: 50px;
+            top: 1px;
+        }
+
+        .right-bottom {
+            right: 140px;
+            z-index: 1;
+            position: absolute;
+            width: 40px;
+            height: 40px;
+            background: #fafafa;
+            border-radius: 50px;
+            top: 196px;
+        }
+      
+        .gray-main-card {
+            border-radius: 10px;
+            background: #fafafa;
+            position: relative;
+            min-height: 309px;
+            border: 1px solid #fafafa;
+            &:hover {
+                border-radius: 10px;
+                border: 1px solid #ffc73d;
+                background: #fff8ea;
+                .right-top {
+                    background: #fff8ea;  
+                    position: absolute;
+                }
+                .right-bottom {
+                    background: #fff8ea;  
+                    position: absolute;
+    
+                }
+                .received-btn { 
+                    background: $primary-color !important;
+                    color: $text-white !important;
+                }
+            }
+            .ant-card-body {
+                padding: 15px 15px 20px 15px;
+                .white-card {
+                    border-radius: 8px;
+                    height: 204px;
+                    .ant-card-body {
+                        padding: 20px;
+                        .coupon-txt {
+                            color: $heading-color;
+                            font-size: $fs_2xl;
+                        }
+                        .usdt-txt {
+                            color: $heading-color;
+                            font-size: $fs_7xl;
+                            span {
+                                color: $text-grey;
+                                font-size: $fs_sm;
+                            }
+                        }
+                        .contract-desc {
+                            color: $heading-color;
+                            font-size: $fs_sm;
+                        }
+                        .current-progress {
+                            color: $text-grey;
+                            font-size: $fs_xs;
+                            span {
+                                color: $heading-color;
+                            }
+                        }
+                        .ant-progress-outer {
+                            padding-right: 0 !important;
+                            margin-right: 0 !important;
+                            .ant-progress-inner {
+                                background: #f7f8fb;
+                                height: 3px !important;
+                                .ant-progress-bg {
+                                    background: $primary-color;
+                                    height: 3px !important;
+                                }
+                            }
+                        }
+                        .ant-progress-text {
+                            display: none;
+                        }
+                        .reward-timer {
+                            .reward-timer-box {
+                                display: flex;
+                                justify-content: start;
+                            }
+                            .timer-txt {
+                                .day-bg {
+                                    background: linear-gradient(0deg, #CDCDCD -62.5%, rgba(255, 255, 255, 0.00) 82.5%);
+                                    padding: 3px 3px 2px 3px;
+                                    font-size: $fs_lg;
+                                    color: $heading-color;
+                                    width: 30px;
+                                }
+                                span {
+                                    color: $text-grey;
+                                    font-size: $fs_xs;
+                                }
+                            }
+                        }
+                    }
+                }
+                .total-amount {
+                    color: $heading-color;
+                    font-size: $fs_xs;
+                    height: 54px;
+                }
+                .received-btn {
+                    background: #eaecef;
+                    height: 34px !important;
+                    border-radius: 50px;
+                    font-size: $fs_sm;
+                    color: $heading-color;
+                }
+            }
+        }
+    }
+    .tabs {
+        .ant-tabs-nav-wrap {
+            padding: 24px 0 !important;
+        }
+    }
+
+    .rewards-hub-tabs {
+        .ant-card-body {
+            padding: 0;
+        }
+        // .rewards-tabs {
+        //     position: relative;
+        //     margin-top: -57px;
+        // }
+        .main-reward-card {
+            .ant-card-body {
+                padding: 0;
+            }
+        }
+        .overview-card2 {
+            .ant-card-body {
+                padding: 0;
+            }
+        }
+        .overview-card {
+            background-color: transparent;
+            .ant-card-body {
+                padding: 0;
+            }
+        }
+        .ant-table-thead > tr > th { 
+            padding: 14px 0px 14px 0px !important;
+        }
+        .ant-table-thead > tr > th:first-child {
+            padding-left: 0px;
+        }
+        .ant-table-thead > tr > th:last-child {
+            padding-right: 0px;
+        }
+        .ant-table-tbody > tr > td {
+            padding: 18px 0px 18px 0px;
+        }
+        .ant-table-tbody > tr > td:first-child {
+            padding-left: 0px;
+        }
+        .ant-table-tbody > tr > td:last-child {
+            padding-right: 0px;
+        }
+        .reward-btn {
+            width: 115px;
+        }
+        .reward-btn-tabs {
+            .ant-radio-button-wrapper {
+                background: #fff;
+                border-radius: 0px 0px 0px 0px !important;
+                width: 220px;
+                font-size: $fs-base;
+                border: none;
+                margin-right: 0px !important;
+                font-weight: 500;
+                height: 57px;
+                line-height: 57px;
+                letter-spacing: 0.2px;
+                color: $text-grey;
+                text-align: center;
+            }
+            .ant-radio-button-wrapper:hover {
+                background-color: transparent;
+                border-radius: 0px 0px 0px 0px;
+                color: $text-grey;
+                font-size: $fs-base;
+            }
+            label.ant-radio-button-wrapper.ant-radio-button-wrapper-checked {
+                background-color: #fff !important;
+                border-radius: 0px 0px 0px 0px;
+                margin-right: 0px !important;
+                color: $heading-color;
+                width: 220px;
+                border: none;
+                border-top: 2px solid $primary-color !important;
+                font-size: $fs-base;
+                box-shadow: inset 0px 6px 11px rgba(168, 168, 168, 0.25) !important;
+            }
+            .ant-radio-button-wrapper:first-child {
+                border-radius: 0;
+            }
+            .ant-radio-group-solid
+                .ant-radio-button-wrapper-checked:not(.ant-radio-button-wrapper-disabled):hover {
+                box-shadow: none;
+                background: transparent;
+            }
+            span.ant-radio-button.ant-radio-button-checked {
+                background-color: #fff3e0;
+            }
+            .ant-radio-button-wrapper:not(:first-child)::before {
+                background-color: transparent;
+                width: 0;
+            }
+        }
+        // .main-card {
+        //     height: 315px;
+        //     .ant-card-body {
+        //         padding: 0;
+        //         .left-card {
+        //             height: 315px;
+        //             border: 0.6px solid #f2f2f2;
+        //             .ant-card-body {
+        //                 padding: 15px 20px;
+        //                 .first-time {
+        //                     font-size: $fs_sm_base;
+        //                     color: $heading-color;
+        //                     line-height: 25px;
+        //                     min-height: 50px;
+        //                 }
+        //                 .ant-slider {
+        //                     margin: 9px 0;
+        //                     .ant-slider-rail {
+        //                         background: #d9d9d9;
+        //                         border-radius: 100px;
+        //                         height: 4px;
+        //                     }
+        //                     .ant-slider-track {
+        //                         background: linear-gradient(
+        //                             90deg,
+        //                             #ffa500 27.25%,
+        //                             #ff8d00 93.92%
+        //                         );
+        //                     }
+        //                 }
+        //                 .usd-price {
+        //                     font-size: $fs_sm;
+        //                     color: $heading-color;
+        //                 }
+        //                 .counter-month {
+        //                     font-size: $fs_sm;
+        //                     line-height: 18px;
+        //                     color: $heading-color;
+        //                 }
+        //                 .ant-divider.ant-divider-vertical {
+        //                     height: 2.9em;
+        //                 }
+        //                 .counter-days {
+        //                     font-size: $fs_md;
+        //                     color: $text-grey;
+        //                 }
+        //                 .first-card {
+        //                     border-right: 1px solid #cacaca;
+        //                 }
+        //                 .note-txt {
+        //                     font-size: $fs_xs;
+        //                     color: $heading-color;
+        //                     min-height: 60px;
+        //                 }
+        //                 .note-desc {
+        //                     color: $text-grey !important;
+        //                 }
+        //             }
+        //         }
+        //         .left-reward-tab {
+        //             position: absolute;
+        //             top: -4%;
+        //             width: 30px;
+        //             height: 30px;
+        //             border-radius: 50%;
+        //             background: #f8fafb;
+        //             z-index: 1;
+        //             text-align: center;
+        //             left: 38%;
+        //         }
+        //         .right-reward-tab {
+        //             position: absolute;
+        //             bottom: 0;
+        //             width: 30px;
+        //             height: 30px;
+        //             border-radius: 50%;
+        //             background: #f8fafb;
+        //             z-index: 1;
+        //             text-align: center;
+        //             left: 38%;
+        //             bottom: -4%;
+        //         }
+        //         .right-card {
+        //             position: relative;
+        //             height: 315px;
+        //             background-image: url("/images/right-side-img.png");
+        //             background-position: center;
+        //             background-size: cover;
+        //             background-repeat: no-repeat;
+        //             .ant-card-body {
+        //                 padding: 0;
+
+        //                 .coupon-txt {
+        //                     font-size: $fs_4xl;
+        //                     text-align: center;
+        //                     color: #ffa500;
+        //                     line-height: 22px;
+        //                 }
+        //                 .doller-txt {
+        //                     font-size: $fs_lg;
+        //                     color: $heading-color;
+        //                     line-height: 48px;
+        //                 }
+        //             }
+        //         }
+        //     }
+        // }
+        .invite-bg {
+            background-image: url("/images/reward-hub4.png");
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+            padding: 40px 0;
+            .invite-heading {
+                font-size: $fs_12xl;
+                line-height: 43px;
+                color: $heading-color;
+            }
+            .invite-desc1 {
+                font-size: $fs-base;
+                line-height: 30px;
+                color: $text-grey;
+            }
+        }
+    }
+    @media screen and (max-width: 1280px) {
+        .reward-card-sec { 
+          .right-bottom {
+            top: 230px !important;
+          }
+            .gray-main-card .ant-card-body .white-card {
+            height: 240px;
+        }
+    }
+       
+        .rewards-hub-header {
+            .rewards-hub-heading {
+                font-size: $fs_7xl;
+            }
+            .rewards-hub-desc {
+                font-size: $fs_xmd;
+            }
+            .reward-pricing-card {
+                .total-price {
+                    font-size: $fs_2xl;
+                }
+                .available-price {
+                    font-size: $fs_xs;
+                }
+                .orange-card-reward .ant-card-body {
+                    padding-bottom: 8px;
+                }
+            }
+        }
+        .rewards-hub-tabs {
+            .main-card {
+                height: 290px;
+                .ant-card-body {
+                    .left-card {
+                        height: 290px;
+                        .ant-card-body {
+                            .reward-pt-3 {
+                                margin-top: 15px !important;
+                            }
+                            .first-time {
+                                font-size: $fs_sm;
+                                margin-bottom: 15px !important;
+                            }
+                            .usd-price {
+                                font-size: $fs_xs;
+                            }
+                            .counter-month {
+                                font-size: $fs_xs;
+                            }
+                            .counter-days {
+                                font-size: $fs_xmd;
+                            }
+                            .note-txt {
+                                font-size: $fs_xxs;
+                            }
+                        }
+                    }
+                    .right-card {
+                        height: 290px;
+                        .ant-card-body {
+                            .coupon-txt {
+                                font-size: $fs_2xl;
+                            }
+                            .doller-txt {
+                                font-size: $fs-base;
+                                margin-bottom: 15px !important;
+                            }
+                        }
+                    }
+                }
+            }
+            .reward-btn {
+                width: 100px;
+                height: 36px !important;
+            }
+            .invite-bg {
+                .invite-heading {
+                    font-size: $fs_2xl;
+                }
+                .invite-desc1 {
+                    font-size: $fs_sm;
+                }
+            }
+        }
+    }
+    @media screen and (max-width: 1024px) {
+
+        .gray-image {
+            display: none;
+        }
+        .reward-timer {
+            display: block;
+        }
+        .rewards-hub-tabs {
+            .rewards-tabs {
+                margin-top: -50px;
+            }
+            .reward-card-sec .gray-main-card .ant-card-body { 
+                .ant-card-body { 
+                    .coupon-txt {
+                    font-size: 1rem;
+                }
+                .usdt-txt {
+                    font-size: 1rem;
+                }
+            }
+                .total-amount { 
+                padding-bottom: 10px;
+            }
+        }
+            .reward-btn-tabs {
+                .ant-radio-button-wrapper {
+                    width: 180px;
+                    height: 50px;
+                    line-height: 50px;
+                }
+                label.ant-radio-button-wrapper.ant-radio-button-wrapper-checked {
+                    width: 180px;
+                }
+            }
+        }
+    }
+}

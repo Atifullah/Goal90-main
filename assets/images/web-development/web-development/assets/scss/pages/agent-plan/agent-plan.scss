@@ -1,0 +1,401 @@
+@import "assets/variables/light.scss";
+
+#agent-plan {
+        .aff-btn-radius{
+        border-radius: 4px;
+    }
+    .bg-white {
+        background-color: $white;
+    }
+    .affiliate-btn {
+        height: 2.5rem;
+        padding: 0rem 1.3125rem;
+    }
+    .submit-btn{
+        padding: 0rem 0.75rem;
+        height: 2rem;
+    }
+    .agent-plan-header {
+        background-image: url("/images/aff-bg.png");
+        padding: 30px 0px 30px 0px;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        height: 17.4375rem;
+        display: grid;
+        align-items: center;
+        .agent-plan-heading {
+            font-size: $fs_14xl;
+            line-height: 36px;
+            color: $white;
+        }
+        .acitve-agent-txt {
+            color: $primary-color !important;
+        }
+        .agent-plan-desc {
+            font-size: $fs_md;
+            color: $white;
+            line-height: 22px;
+            max-width: 455px;
+            // margin: 0 auto;
+        }
+        .agent-btn-card {
+            border: 1px solid rgba(255, 165, 0, 0.22);
+            border-radius: 20px;
+            .ant-card-body {
+                padding: 10px;
+                .agent-commission {
+                    font-size: $fs_sm;
+                    color: $heading-color;
+                }
+            }
+        }
+        .main-content {
+            position: relative;
+            &::after {
+                content: "";
+                position: absolute;
+                height: 200px;
+                width: 20%;
+                background: url(/images/aff-speaker.png);
+                background-position: center;
+                background-size: 100%;
+                background-repeat: no-repeat;
+                left: 65.5%;
+                top: -25px;
+            }
+            .content-center {
+                display: block;
+            }
+        }
+    }
+   /*  .ant-btn span {
+        padding: 0rem 1.3125rem;
+    } */
+    .agent-row{
+       /* .ant-row{
+        margin-left: 0 !important;
+        margin-right:0 !important ;
+       } */
+        .ant-card-body{
+            padding: 24px 0;
+        }
+    }
+    .ant-card-head-title {
+        font-weight: 500;
+        font-size: $fs_4xl;
+        color: $heading-color;
+    }
+    .affiliate-detail {
+        position: relative;
+        text-align: center;
+        margin: 0 230px;
+    }
+    .affiliate-box {
+        position: absolute;
+        left: 0;
+        right: 0;
+        text-align: center;
+        max-width: 279px;
+        margin: 0 auto;
+        top: -35px;
+    }
+    .box-card {
+        background: #ffffff;
+        border: 1.2px solid #ffd281;
+        border-radius: 13px;
+        min-height: 60px;
+        line-height: 60px;
+        .ant-card-body {
+            padding: 0;
+        }
+        .invite-b {
+            font-weight: 700;
+            font-size: $fs_12xl;
+            color: $heading-color;
+        }
+        .invite-heading-a {
+            color: $primary-color !important;
+        }
+        .invite-a {
+            background: #fff;
+            font-weight: 700;
+            font-size: 40px;
+            color: $primary-color;
+            border-radius: 18px 0 0 18px;
+            text-align: center;
+        }
+    }
+    .affiliate-detail-box {
+        display: flex;
+        justify-content: space-between;
+        position: absolute;
+        bottom: 65px;
+        max-width: 1310px;
+        width: 100%;
+        .box1 {
+            max-width: 279px !important;
+            width: 100%;
+        }
+    }
+    .box2 {
+        bottom: -20px !important;
+    }
+    .agent-main-heading {
+        font-size: $fs_14xl;
+        color: $heading-color;
+    }
+    .agent-main-description {
+        font-family: "Satoshi";
+        font-size: $fs-base;
+        color: $heading-color;
+        span {
+            color: $primary-color;
+        }
+    }
+    .affiliate-commission-container{
+        .ant-row{
+            margin: 0 !important;
+        }
+    }
+    /* .affiliate-commission{
+        padding: 0 !important;
+        
+    } */
+    .agent-main-title {
+        font-size: $fs_2xl;
+        color: #2b2b2b;
+    }
+    .agent-main-desc {
+        font-size: $fs-base;
+        color: $heading-color;
+    }
+    .agent-card-h {
+        min-height: 67px;
+    }
+    .agent-card {
+        /* .ant-row{
+            margin: 0 !important;
+        } */
+        .ant-card-body {
+            padding: 25px 0;
+        }
+    }
+    .card__contaier {
+        display: flex;
+        max-width: 75%;
+        gap: 3rem;
+        .commission-card {
+            min-height: 145px;
+            border: none;
+            border-radius: 0;
+            .ant-row{
+                margin: 0 !important;
+            }
+            .ant-card-body {
+                padding: 0;
+            }
+            .col-alignment {
+                flex-direction: column;
+                align-items: flex-start;
+                /* gap: 1.5rem; */
+            }
+            .agent-main-heading {
+                font-size: $fs_2xl;
+            }
+            .agent-main-desc {
+                font-size: $fs_sm;
+                color: $text-grey;
+            }
+        }
+       /*  .ant-btn span {
+            padding: 0 0.5rem;
+        } */
+    }
+    .agent-social-card {
+        background: #ffffff;
+        border-radius: 1.125rem;
+        border: 1px solid #eaeaea;
+        min-height: 22.375rem;
+        /*  max-width: 18.62rem; */
+        .ant-card-body {
+            padding: 24px 15px;
+            .sub-heading {
+                font-weight: 700;
+                font-size: $fs_sm;
+                line-height: 22px;
+                color: #afafaf;
+            }
+            .num-txt {
+                font-size: $fs_16xl;
+                color: $primary-color;
+            }
+        }
+        .agent-new-card {
+            padding: 0 1.9rem;
+            display: flex;
+            flex-direction: column;
+            gap: 1rem;
+            max-width: 18.62rem;
+            /* min-height: 325px; */
+            .agent-img-circle {
+                height: 60px;
+                width: 60px;
+                /* text-align: center; */
+                border-radius: 50%;
+                background: #fafafa;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+            }
+        }
+    }
+    .all-agent-bg {
+        background-image: url("/images/aff-community-bg.png");
+        background-position: center;
+        background-repeat: no-repeat;
+        padding: 80px 0 100px 0;
+        padding-left: 3rem;
+        background-size: contain;
+        &::after {
+            content: "";
+            position: absolute;
+            height: 100%;
+            width: 26%;
+            background: url(/images/affiliate-community.png);
+            background-position: center;
+            background-size: 100%;
+            background-repeat: no-repeat;
+            left: 62.5%;
+            top: 0;
+        }
+        .ant-card-body {
+            padding: 30px;
+        }
+        .all-agent-heading {
+            font-size: $fs_12xl;
+            color: $heading-color;
+        }
+        /* .affiliate-btn {
+            margin-left: 120px;
+        } */
+    }
+    .join-banner{
+        margin: 0 !important;
+    }
+    .financial-card{
+        .ant-card-body{
+            padding: 24px 0;
+        }
+    }
+    @media screen and (max-width: 1200px) {
+        .agent-main-heading {
+            font-size: $fs_lg;
+        }
+        .agent-main-title {
+            font-size: $fs_sm;
+        }
+        .agent-main-desc {
+            font-size: $fs_xs;
+            margin-bottom: 0 !important;
+        }
+        .agent-plan-header {
+            .agent-plan-heading {
+                font-size: $fs_2xl;
+            }
+            .agent-plan-desc {
+                font-size: $fs_xmd;
+            }
+            .agent-btn-card .ant-card-body {
+                .agent-plan-heading {
+                    font-size: $fs_lg;
+                    line-height: 28px;
+                }
+                .agent-commission {
+                    font-size: $fs_xs;
+                }
+            }
+        }
+        /* .commission-card {
+            .col-alignment {
+                padding: 0 4rem 0 1.5rem !important;
+        }
+         } */
+        .commission-card {
+            .agent-main-heading {
+                font-size: 1.125rem !important;
+            }
+            .agent-main-desc {
+                font-size: 0.75rem !important;
+            }
+        }
+        .all-agent-bg {
+            padding: 60px 0 80px 0;
+            .all-agent-heading {
+                font-size: $fs_7xl;
+            }
+        }
+    }
+    @media screen and (max-width: 1024px) {
+        .all-agent-bg {
+            padding: 40px 0 60px 0;
+            .all-agent-heading {
+                font-size: $fs_2xl;
+            }
+        }
+    }
+    @media screen and (max-width: 992px) {
+        .agent-plan-header {
+            .agent-plan-desc {
+                max-width: 585px;
+            }
+        }
+        .main-content {
+            /*  padding-left: 0; */
+            text-align: center;
+            &::after {
+                display: none;
+            }
+            .content-center {
+                display: flex !important;
+                justify-content: center;
+            }
+            .agent-new-card {
+                max-width: 100%;
+                gap: 0;
+            }
+            .agent-social-card {
+                border-radius: 0;
+                border: none;
+                min-height: auto;
+            }
+            .agent-plan-content {
+                padding-left: 0 !important;
+            }
+        }
+        .ant-card-body {
+            padding: 0 15px !important;
+        }
+        .card__contaier {
+            display: block;
+            max-width: 100%;
+            gap: 1.5rem;
+        }
+        .commission-card .col-alignment {
+            align-items: center !important;
+            /* padding: 1.5rem 6rem 1.5rem 1.5rem; */
+        }
+        .all-agent-bg {
+            padding-left: 0 !important;
+            background-size: cover;
+            &::after {
+                display: none;
+            }
+        }
+    }
+    @media screen and (max-width: 1295px) {
+        .agent-new-card {
+            padding: 0 1rem !important;
+        }
+    }
+}

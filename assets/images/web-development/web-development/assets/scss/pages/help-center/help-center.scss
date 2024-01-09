@@ -1,0 +1,350 @@
+@import "assets/variables/light.scss";
+
+#help-center {
+    // font-family: $font-family-stoshi !important;
+    background-color: #fff;
+    .pt-8 {
+        padding-top: 100px;
+    }
+    .pt-6 {
+        padding-top: 60px;
+    }
+    .pb-6 {
+        padding-bottom: 60px;
+    }
+    .search-content {
+        background: url("/images/search-bg.png");
+        background-position: center;
+        background-size: cover;
+        background-repeat: no-repeat;
+        padding: 30px 0 35px 0;
+    }
+    .ant-col-xl-4 {
+        display: table;
+        box-sizing: border-box;
+        width: 16.66666667%;
+    }
+    .ant-input-affix-wrapper {
+        font-size: $fs_2xl;
+    }
+    .articles-date {
+        color: #81858c !important;
+        font-size: $font-size-base;
+        padding: 0px !important;
+        font-weight: 300;
+    }
+
+    .help-center-desc {
+        font-size: $fs_2xl;
+    }
+    .help-center-descc {
+        color: #081131;
+        border-radius: 65px;
+        border: solid 1px #eaeaea;
+        margin-bottom: 40px;
+        .ant-card-body {
+            padding: 20px;
+            .channel-name {
+                color: $heading-color;
+                font-size: 1rem;
+            }
+        }
+        &:hover {
+            background-color: #fafafa;
+        }
+    }
+    .subitems {
+        font-size: $fs_sm;
+        color: $heading-color !important;
+        text-decoration: underline;
+    }
+
+    .intro-title {
+        font-size: $fs_2xl;
+        color: $heading-color;
+    }
+
+    .help-center-heading {
+        // margin-bottom: 11px !important;
+        font-family: $font-family !important;
+        font-size: $fs_14xl;
+        color: $heading-color;
+
+        .active-txt {
+            color: $primary-color;
+        }
+    }
+
+    .services-list {
+        font-size: $fs-base;
+        color: $heading-color;
+    }
+
+    .help-divider {
+        background-color: #f2f2f2;
+        height: 0.6px !important;
+        top: 0em !important;
+        width: 1px !important;
+    }
+
+    .articles-desc {
+        // width: 450px;
+        font-size: $fs-base !important;
+        color: $heading-color;
+        line-height: 32px;
+    }
+
+    button.ant-btn.ant-btn-primary.ant-btn-lg.ant-input-search-button {
+        height: 30px !important;
+        margin-right: 4px !important;
+        color: white;
+        border-radius: 4px !important;
+    }
+    // .search-bar  {
+    //     .ant-input {
+    //         border: none;
+    //     }
+    // }
+    span.ant-input-group-addon {
+        border: 1px solid #d0d5dd !important;
+        border-left: 0 !important;
+        border-radius: 0 6px 6px 0;
+        background-color: transparent;
+    }
+
+    .help-center-header {
+        background-image: url("/images/help-center-banner.png");
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        padding: 44px 0;
+    }
+
+    .self-services {
+        font-size: $fs_lg;
+        color: $heading-color;
+    }
+
+    .articels-txt {
+        font-size: $fs_14xl;
+        color: $heading-color;
+    }
+
+    .services-card1 {
+        .ant-card-body {
+            padding: 24px 12px;
+        }
+    }
+    // .row-table{
+    //     display: table;
+    // }
+        .services-list-col {
+            width: 20%;
+            display: inline-grid;
+            padding-right: 38px;
+            margin-bottom: 37px;
+            &:last-child {
+                margin-bottom: 0 !important;
+            }
+        }
+    .services-card {
+        background-color: #fafafa;
+        border-radius: 82px;
+      
+        .ant-card-body {
+            padding: 20px 30px;
+            .gray-card-list {
+                height: 44px;
+            }
+        }
+
+        // &:hover {
+        //     background: rgba(255, 187, 63, 0.09);
+        //     border-radius: 13px;
+        //     cursor: pointer;
+        // }
+    }
+    // help-center-search-input
+    .help-center-search-input {
+        .ant-input {
+            height: 54px !important;
+            font-size: 1rem;
+            color: $heading-color;
+            border: none;
+            box-shadow: none;
+            border-radius: 12px;
+            ::placeholder {
+                color: $text-grey;
+                font-size: 1rem;
+            }
+        }
+    }
+    .ant-layout {
+        background-color: #fff !important;
+    }
+
+    .faq-title {
+        font-size: $fs-base;
+        color: $heading-color;
+    }
+
+    .faq-desc {
+        font-size: $fs_md;
+        color: $text-grey;
+    }
+
+    .ant-breadcrumb {
+        font-size: $fs_sm;
+        font-weight: 500;
+        color: $text-grey;
+    }
+
+    .ant-breadcrumb-separator {
+        color: $text-grey;
+    }
+
+    .update-time {
+        font-size: $fs_sm;
+        color: $text-grey;
+    }
+
+    .ant-breadcrumb > span:last-child a {
+        font-size: $fs_sm;
+        font-weight: 500;
+        color: $text-grey;
+    }
+
+    .heading-border {
+        border-left: 3px solid $primary-color;
+    }
+
+    .articles-related-list {
+        list-style: none;
+
+        li {
+            a {
+                font-weight: 500;
+                font-size: $fs_sm;
+                color: $text-grey;
+            }
+        }
+    }
+
+    .articles-desc-detail h1,
+    .articles-desc-detail h2 {
+        border-left: 3px solid orange !important;
+        padding: 0px 0 8px 10px !important;
+        border-bottom: 1px solid #f2f2f2;
+        margin: 33px 0 12px 0 !important;
+        font-weight: 500 !important;
+        font-size: $fs_2xl !important;
+        color: $heading-color !important;
+    }
+    .articles-desc-detail h4 {
+        font-weight: 400 !important;
+        font-size: $fs_lg !important;
+        color: $heading-color !important;
+    }
+    .articles-desc-detail p {
+        // font-weight: 500 !important;
+        font-size: $fs_sm !important;
+        color: $heading-color !important;
+    }
+    .articles-desc-detail ul {
+        margin-bottom: 0 !important;
+    }
+    .articles-desc-detail ol {
+        padding-left: 18px;
+    }
+    .articles-desc-detail img {
+        max-width: 100% !important;
+    }
+    .visited-link {
+        background: #f8f8f8;
+        border-radius: 4px;
+        padding: 10px 12px;
+
+        a {
+            color: $heading-color !important;
+        }
+    }
+
+    .positive-txt-box {
+        display: flex;
+        justify-content: center;
+        max-width: 333px;
+        width: 100%;
+        background: #fafafa;
+        border-radius: 75px;
+        padding: 5px;
+        margin: 0 auto;
+    }
+
+    .thumbs-up-btn {
+        background: #d1ffed !important;
+        border-radius: 75px;
+        height: 37px !important;
+        border: none !important;
+        font-size: $fs_md;
+        color: #0ecb81 !important;
+        width: 150px;
+    }
+
+    .thumbs-down-btn {
+        background: #ffdfdf !important;
+        border-radius: 75px;
+        height: 37px !important;
+        border: none !important;
+        font-size: $fs_md;
+        color: #f6465d !important;
+        width: 150px;
+    }
+
+    .thumbs-neutral-btn {
+        background: #fafafa;
+        color: #afafaf;
+        border-radius: 75px;
+        height: 37px !important;
+        border: none !important;
+        font-size: $fs_md;
+        width: 150px;
+    }
+
+    ul li {
+        list-style: none;
+    }
+    @media screen and (max-width: 1280px) {
+        .articels-txt {
+            font-size: $fs_4xl;
+        }
+        .help-center-desc {
+            font-size: $fs_sm;
+        }
+
+        element.style {
+            padding-left: 8px;
+            padding-right: 8px;
+        }
+        .ant-layout,
+        .ant-layout * {
+            box-sizing: border-box;
+        }
+
+        .ant-col-xl-4 {
+            display: table;
+            box-sizing: border-box;
+            width: 16.66666667%;
+        }
+        .services-list-col {
+            width: 24.333%;
+        }
+    }
+    @media screen and (max-width: 1024px) {
+        .services-list-col {
+            width: 33.333%;
+        }
+        .help-center-heading {
+            font-size: $fs_8xl;
+        }
+    }
+}

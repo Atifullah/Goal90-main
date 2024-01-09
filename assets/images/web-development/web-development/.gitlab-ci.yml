@@ -1,0 +1,18 @@
+stages:
+  - deploy
+deploy_job:
+  type: deploy
+  script:
+    - cd /data/webinfo/web/ 
+    - git fetch --all 
+    - git reset --hard origin/master 
+    - git pull  
+    - npm install  
+    - npm run build
+    - cd /data/webinfo/web/.hex/
+    - pm2 restart bitnasdaq_test      
+  tags:
+    - v1
+  only:
+    - master
+

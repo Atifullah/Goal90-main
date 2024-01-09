@@ -1,0 +1,100 @@
+@import "assets/variables/light.scss";
+
+#partner-program {
+    background-color: $white;
+    .partner-bg {
+        background: url("/images/partner.png");
+        background-position: center;
+        background-size: cover;
+        background-repeat: no-repeat;
+        padding: 70px 0;
+        .partner-heading {
+            font-size: $fs_16xl;
+            color: $white;
+        }
+        .partner-desc {
+            font-size: $fs_2xl;
+            color: rgba(255, 255, 255, 0.9);
+        }
+    }
+    .primary-btn {
+        height: 38px !important;
+        margin-top: 40px;
+    }
+    .pt-6 {
+        padding-top: 80px;
+    }
+    .sub-heading {
+        font-size: $fs_14xl;
+        color: $heading-color;
+    }
+    .sub-text {
+        font-size: $fs-base;
+        color: $heading-color;
+    }
+    .title-desc {
+        font-size: $fs_sm;
+        color: $heading-color;
+        line-height: 30px;
+    }
+    .partner-types {
+        display: flex;
+        justify-content: space-between;
+        .type-box {
+            max-width: 257px;
+        }
+    }
+    .bitnasdaq-partner {
+        background: url("/images/partner-bg.png");
+        background-position: center;
+        background-size: cover;
+        background-repeat: no-repeat;
+        padding: 60px 0;
+        .bitnasdaq-desc {
+            font-size: $fs_2xl;
+            color: $heading-color;
+        }
+    }
+    @media screen and (max-width: 1280px) {
+        .partner-bg {
+            .partner-heading {
+                font-size: $fs_7xl;
+            }
+            .partner-desc {
+                font-size: $fs-base;
+            }
+        }
+        .sub-heading {
+            font-size: $fs_4xl;
+        }
+        .sub-text {
+            font-size: $fs_sm;
+        }
+        .pt-6 {
+            padding-top: 50px;
+        }
+        .title-desc {
+            font-size: $fs_xs;
+            line-height: 25px;
+        }
+        .bitnasdaq-partner .bitnasdaq-desc { 
+            font-size: $fs-base;
+        }
+    }
+}
+#partner-modal {
+    .ant-modal-content {
+        border-radius: 12px;
+        .partner-heading {
+            font-size: $fs_lg;
+            color: $heading-color;
+        }
+        .partner-desc {
+            font-size: $fs_sm;
+            color: $text-grey;
+        }
+        .query-desc {
+            min-height: 110px;
+        }
+    }
+}

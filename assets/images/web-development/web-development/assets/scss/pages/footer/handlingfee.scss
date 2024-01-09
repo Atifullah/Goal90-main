@@ -1,0 +1,135 @@
+@import "assets/variables/light.scss";
+
+#handling-fee {
+    background: $white;
+    .text-desc {
+        color: $heading-color;
+        font-size: $fs_base;
+    }
+    .handling-fee-bg {
+        background: url("/images/handling-fee.svg");
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+        padding: 75px 0;
+        .main-heading {
+            color: $heading-color;
+            font-size: $fs_14xl;
+        }
+ 
+    }
+    .primary-btn {
+        height: 38px !important;
+        margin-top: 30px;
+    }
+    .pt-8 {
+        padding-top: 100px;
+    }
+    .pb-6 {
+        padding-bottom: 60px;
+    }
+    .sub-heading {
+        font-size: $fs_14xl;
+        color: $heading-color;
+    }
+    .sub-text {
+        font-size: $fs_2xl;
+        color: $heading-color;
+    }
+    .cost-effective {
+        font-size: $fs_12xl;
+    }
+    .title-desc {
+        font-size: $fs_base;
+        color: $heading-color;
+        line-height: 30px;
+    }
+    .ant-tabs-nav-wrap {
+        padding: 0 !important;
+    }
+    .ant-table-tbody tr:last-child td {
+        border-bottom: none !important;
+    }
+    .ant-table-thead > tr:first-child > th:first-child {
+        padding-left: 5px !important;
+    }
+    .ant-table-tbody > tr > td:first-child {
+        padding-left: 5px !important;
+    }
+    .ant-table-thead > tr > th {
+        background-color: $white;
+        color: #9b9a9a;
+        border-bottom: none;
+    }
+    .wing-token {
+        color: #afafaf;
+    }
+    .ant-table-thead
+        > tr.ant-table-row-hover:not(.ant-table-expanded-row):not(.ant-table-row-selected)
+        > td,
+    .ant-table-tbody
+        > tr.ant-table-row-hover:not(.ant-table-expanded-row):not(.ant-table-row-selected)
+        > td,
+    .ant-table-thead
+        > tr:hover:not(.ant-table-expanded-row):not(.ant-table-row-selected)
+        > td,
+    .ant-table-tbody
+        > tr:hover:not(.ant-table-expanded-row):not(.ant-table-row-selected)
+        > td {
+        background-color: $white !important;
+    }
+    .ant-table-tbody > tr > td {
+        border-bottom: 1px solid #f3f5f5 !important;
+    }
+    .ant-tabs-nav .ant-tabs-tab:first-child {
+        margin-left: 25px;
+    }
+    .vip-txt {
+        font-size: $fs-base;
+        color: $heading-color;
+    }
+    .ant-table-pagination.ant-pagination {
+        margin-right: 16px;
+    }
+    .bitnasdaq-partner {
+        background: url("/images/partner-bg.png");
+        background-position: center;
+        background-size: cover;
+        background-repeat: no-repeat;
+        padding: 54px 0;
+        .bitnasdaq-desc {
+            font-size: $fs-base;
+            max-width: 743px;
+            color: $heading-color;
+            a {
+                text-decoration: underline;
+                color: $heading-color;
+                font-weight: 500;
+            }
+        }
+    }
+    @media screen and (max-width: 1200px) {
+        .handling-fee-bg {
+            .main-heading {
+                font-size: $fs_7xl;
+            }
+            .text-desc {
+                font-size: $fs-base;
+            }
+        }
+        .sub-text {
+            font-size: $fs_sm;
+        }
+        .title-desc {
+            font-size: $fs_xs;
+            line-height: 25px;
+
+        }
+        .sub-heading { 
+            font-size: $fs_7xl;
+        }
+        .bitnasdaq-partner .bitnasdaq-desc { 
+            font-size: $fs_sm;
+        }
+    }
+}

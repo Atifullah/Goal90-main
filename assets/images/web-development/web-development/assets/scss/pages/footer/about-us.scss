@@ -1,0 +1,136 @@
+@import "assets/variables/light.scss";
+
+#about-us {
+    .about-us {
+        background: url("/images/about-us.png");
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+        padding: 75px 0;
+        .about-heading {
+            color: $heading-color;
+            font-size: $fs_14xl;
+        }
+        .about-desc {
+            color: $heading-color;
+            font-size: $fs_base;
+        }
+    }
+    .main-heading {
+        color: $heading-color;
+        font-size: $fs_14xl;
+    }
+    .small-text {
+        font-size: $fs_base;
+        color: $heading-color;
+        line-height: 23px;
+    }
+    .pb-6 {
+        padding-bottom: 80px;
+    }
+    .pt-6 {
+        padding-top: 100px;
+    }
+    .feature-list-box {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        .all-box {
+            margin-right: 64px;
+            width: 100%;
+            &:last-child {
+                margin-right: 0;
+            }
+        }
+    }
+    .gray-card {
+        border-radius: 18px;
+        border: 1px solid #eaeaea;
+        &:hover {
+            border: 1px solid $primary-color;
+        }
+        .ant-card-body {
+            padding: 25px 20px;
+            .feature-heading {
+                font-size: $fs-base;
+                color: $heading-color;
+            }
+            .feature-desc {
+                font-size: $fs-sm;
+                color: $heading-color;
+                min-height: 85px;
+            }
+        }
+
+    }
+    .our-team-title {
+        font-size: $fs_2xl;
+        color: $heading-color;
+    }
+    .our-team-desc {
+        font-size: $fs_base;
+        color: $heading-color;
+    }
+    .social-community {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    .social-icon {
+        .all-icon {
+            width: 61px;
+            min-height: 50px !important;
+            border-radius: 8px;
+            border: 1px solid #ececec;
+            text-align: center;
+            padding: 11px 0;
+        }
+    }
+    @media screen and (max-width: 1366px) {
+
+    .feature-list-box .all-box {
+        margin-right: 30px;
+    }
+}
+    @media screen and (max-width: 1280px) {
+        .about-us {
+            .about-heading {
+                font-size: $fs_16xl;
+            }
+            .about-desc {
+                font-size: $fs-base;
+            }
+        }
+        .main-heading {
+            font-size: $fs_7xl;
+        }
+        .small-text {
+            font-size: $fs_md;
+            line-height: 25px;
+        }
+    
+        .gray-card .ant-card-body {
+            .feature-heading {
+                font-size: $fs_xs;
+            }
+            .feature-desc {
+                font-size: $fs_xs;
+            }
+        }
+        .our-team-desc {
+            font-size: $fs-base;
+        }
+    }
+    @media screen and (max-width: 1024px) {
+        .feature-list-box .all-box {
+            margin-right: 15px;
+        }
+        .gray-card .ant-card-body {
+            padding: 25px 15px;
+        
+    }
+        .right-side-img {
+            width: 100%;
+        }
+    }
+}

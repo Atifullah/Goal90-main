@@ -1,0 +1,16 @@
+[
+    {
+        "relation": [
+            "delegate_permission/common.handle_all_urls"
+        ],
+        "target": {
+            "namespace": "android_app",
+            "package_name": "com.bitnasdaq.exchange",
+            "sha256_cert_fingerprints": [
+                "48:5C:04:89:EC:2A:C1:92:88:C5:9A:B5:A2:2A:19:78:E5:E1:4F:52:11:A2:65:32:1A:86:CE:E2:48:33:E6:5A",
+                "03:1A:5F:CC:4B:7E:23:77:02:99:CB:AA:B1:97:FB:19:14:0E:DB:92:60:13:B5:15:9E:CD:75:43:F9:BB:7D:6C",
+                "B0:74:D2:11:23:AC:12:B3:26:1A:FE:82:0B:8E:91:95:57:7D:99:BD:9A:08:8C:CB:CC:91:BC:8A:F2:A5:80:B1"
+            ]
+        }
+    }
+]

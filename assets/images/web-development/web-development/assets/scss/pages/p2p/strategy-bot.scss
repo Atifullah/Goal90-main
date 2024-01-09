@@ -1,0 +1,270 @@
+@import "assets/variables/light.scss";
+
+#strategy-bot {
+    .bg-white {
+        background-color: $white;
+    }
+    .ant-carousel .slick-slide img {
+        display: inline-block;
+    }
+    .ant-btn {
+        border-radius: 4px;
+    }
+    .strategy-bot-bg {
+        background: url("/images/strategy-bg1.png");
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+        padding: 4rem;
+        position: relative;
+        &::after {
+            content: "";
+            background: url(/images/strategy-bg2.png);
+            background-position: center;
+            background-size: cover;
+            background-repeat: no-repeat;
+            height: 85%;
+            width: 40%;
+            position: absolute;
+            top: 60px;
+            right: 7%;
+        }
+        .strategy-bot-title {
+            font-size: $fs_7xl;
+            color: $heading-color;
+        }
+        .strategy-bot-desc {
+            font-size: $fs-base;
+            color: $heading-color;
+        }
+        .ant-btn {
+            height: 2.5rem;
+        }
+        .cancel-outline-btn {
+            color: $heading-color;
+            border: none;
+            background-color: $cl_EAECEF;
+            a {
+                padding: 0rem 0.625rem;
+            }
+        }
+    }
+    .bot-title {
+        gap: 1rem;
+    }
+
+    .grid-bot-card {
+        border: 1px solid #eaeaea;
+        border-radius: 0.875rem;
+        max-width: 28.23038rem;
+        .ant-row-flex {
+            align-items: end;
+        }
+        .bot-create-btn {
+            color: $text-grey;
+            font-size: $fs_sm;
+            font-family: "Satoshi";
+            height: auto;
+            background-color: transparent;
+            padding: 0;
+        }
+        &:hover {
+            background: linear-gradient(
+                180deg,
+                #fff 55.42%,
+                #ffecca 191.78%
+            );
+            border: 1px solid #ffc73d;
+            .bot-create-btn {
+                color: #ffa500;
+            }}
+    }
+
+    .tag {
+        border: 1px solid #f2f2f2;
+        border-radius: 2px;
+        font-size: $fs_xxs;
+        color: $text-grey;
+        background-color: $white;
+        padding: 0px 5px;
+    }
+    .perpetual-txt {
+        font-size: $fs_xs;
+        color: $text-grey;
+    }
+    .gird-bot-title {
+        font-size: $fs-base;
+        color: $heading-color;
+    }
+    .grid-bot-desc {
+        font-size: $fs_xs;
+        color: $text-grey;
+    }
+    .highest-apr {
+        font-size: $fs_xs;
+        color: $heading-color;
+    }
+    .running-bot {
+        font-size: $fs_2xl;
+        color: $heading-color;
+    }
+    .trade-num {
+        justify-content: end;
+        font-size: $fs_sm;
+        color: $heading-color;
+        font-family: "IBM Plex Sans";
+        span {
+            color: $text-grey;
+        }
+    }
+    .dca-bots {
+        font-size: $fs-base;
+        color: $heading-color;
+    }
+    .text-end {
+        text-align: end;
+    }
+    .grid-spot-card {
+        .ant-card-body {
+            padding: 0 !important;
+            .trade-btn {
+                height: 32px !important;
+                font-size: $fs_sm !important;
+            }
+            .strategy-cards {
+                .st-card {
+                    background-color: #fafafa;
+                    border-radius: 10px;
+                    border: 1px solid #fafafa;
+                    transition: all 0.5s ease;
+                    &:hover {
+                        background: linear-gradient(
+                            180deg,
+                            #fff 55.42%,
+                            #ffecca 191.78%
+                        );
+                        border: 1px solid #ffc73d;
+                        .create-btn {
+                            background-color: #ffa500;
+                            color: $white;
+                        }
+                    }
+                }
+                .bot-details-row {
+                    padding: 24px 24px 0 24px;
+                }
+
+                .profit-row {
+                    padding: 0 24px 0 24px;
+                }
+
+                .ranking-create-row {
+                    padding: 0 24px 24px 0;
+                    .create-btn {
+                        border-radius: 6.25rem;
+                        border: 1px solid #eaecef;
+                        padding: 0 1rem;
+                        background: #eaecef;
+                    }
+                    .rank-img{
+                        height: 25px;
+                    }
+                }
+                .pl-value {
+                    font-size: $fs-base;
+                }
+                /* .graph{
+                    text-align: end;
+                } */
+                .ranking {
+                    font-size: $fs_sm;
+                    color: $heading-color;
+                    border-radius: 0rem 1.5rem 1.5rem 0rem;
+                    background: #f0f0f0;
+                    padding: 0.5rem;
+                }
+            }
+        }
+        .ant-tabs-tab {
+            font-size: $fs-base;
+            /* font-weight: 500; */
+        }
+        .ant-tabs-tab-active {
+            border-radius: 7px !important;
+            border: 1px solid #ebebeb;
+        }
+        /* .ant-select-selection,
+        .outline-btn {
+            background-color: #f5f5f5;
+            border-radius: 0.25rem;
+            border: none;
+        }
+        .outline-btn:hover {
+            box-shadow: none;
+        } */
+    }
+    .ant-tabs-nav-wrap {
+        padding: 0;
+        .ant-tabs-nav {
+            padding: 0.35rem 0.1rem;
+        }
+    }
+    .list-notifi {
+        .ant-card-body {
+            padding: 4px 0px !important;
+        }
+    }
+    .faqs-container {
+        .ant-card-body {
+            padding: 0;
+        }
+    }
+    @media screen and (min-width: 1442px) and (max-width: 1478px) {
+        .grid-bot-row {
+            margin-left: 0 !important;
+            margin-right: 0 !important;
+        }
+    }
+    @media screen and (min-width: 1190px) and (max-width: 1336px) {
+        .rank-img{
+            height: 20px !important;
+        }
+    }
+    @media screen and (max-width: 1280px){
+        .ranking{
+            font-size: .75rem !important;
+        }
+    }
+    @media screen and (max-width: 1200px) {
+        .strategy-bot-bg {
+            &::after {
+                width: 53%;
+                right: 0;
+            }
+        }
+        .grid-bot-desc {
+            font-size: $fs_xxs;
+        }
+        .running-bot {
+            font-size: $fs-base;
+        }
+    }
+    @media screen and (max-width: 1024px) {
+        .bot-img {
+            width: 100%;
+        }
+        .list-bot-img {
+            height: 42px;
+        }
+    }
+    @media screen and (max-width: 992px) {
+        .strategy-bot-bg {
+            &::after {
+                display: none;
+            }
+        }
+        /* .filter-box{
+            padding-right: 8px;
+        } */
+    }
+}

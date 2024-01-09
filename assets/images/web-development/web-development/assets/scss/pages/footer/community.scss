@@ -1,0 +1,266 @@
+@import "assets/variables/light.scss";
+#join-us {
+    font-family: 'IBM Plex Sans';
+    .join-us-wrapper {
+        max-width: 984px;
+    }
+    .join-us-main-con {
+        flex-direction: column;
+    }
+    .bg-white {
+        background-color: $white;
+    }
+    .join-us-new-heading {
+        color: $heading-color;
+
+        font-size: $fs_14xl;
+    }
+    .join-us-new-desc {
+        color: $heading-color;
+        font-size: $fs-base;
+    }
+    .join-us-new-header {
+        height: 18.125rem;
+        background-image: url("/images/community-banner.png");
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        text-align: center;
+        .join-us-new-desc {
+            font-size: $fs_2xl;
+        }
+        .community-card-container {
+            justify-content: center;
+            position: relative;
+            top: 35px;
+            z-index: 1;
+            .ant-card {
+                max-width: 18.75rem;
+                border-radius: 0.75rem;
+                .ant-card-body {
+                    padding: 1.6px !important;
+                }
+            }
+            .comunity-details {
+                padding: 0.5rem 0;
+                text-align: left;
+                color: $heading-color;
+                font-family: "IBM Plex Sans";
+            }
+            .community-btn {
+                border-radius: 0.25rem;
+                padding: 0.3rem 0.75rem;
+                height: auto;
+                color: $white;
+                font-size: $fs_sm;
+                margin-left: 2.5rem;
+            }
+            .is-gradiant {
+                background: linear-gradient(
+                    180deg,
+                    #9d41a5 0%,
+                    #d74669 32.29%,
+                    #e95950 70.83%,
+                    #f8bd01 100%
+                ) !important;
+            }
+            .join-community {
+                padding-right: 1.25rem;
+            }
+            .our-platform {
+                font-size: $fs-base;
+                letter-spacing: 0.014rem;
+            }
+            .followers {
+                font-size: $fs_sm;
+            }
+        }
+    }
+    .join-us-main-con {
+        .joinus-cards {
+            margin-top: 10rem;
+            .join-social-card {
+                background: #ffffff;
+                border-radius: 1.125rem;
+                border: 1px solid #eaeaea;
+                text-align: left;
+                max-width: 18.5rem;
+                font-family: "IBM Plex Sans";
+                .ant-card-body {
+                    padding: 0;
+                }
+                .join-new-card {
+                    padding: 1.9rem;
+                    flex-direction: column;
+                    gap: 1rem;
+                    .join-img-circle {
+                        height: 60px;
+                        width: 60px;
+                        border-radius: 50%;
+                        background: #fafafa;
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+                    }
+                }
+                .join-main-title {
+                    color: #2b2b2b;
+                    font-size: $fs_2xl;
+                }
+                .join-main-desc {
+                    color: $heading-color;
+                    font-size: $fs-base;
+                }
+            }
+        }
+        .community-section {
+            font-family: "IBM Plex Sans";
+            .com-cards {
+                .ant-card-body {
+                    padding: 0 !important;
+                }
+                .social-card-container {
+                    margin: 0 !important;
+                    > .ant-col {
+                        min-width: 315px;
+                    }
+                }
+            }
+            .community-cards {
+                border-radius: 4.0625rem;
+                padding: 0.875rem 1.25rem;
+                border: 1px solid #eaeaea;
+                max-width: 19.4375rem;
+                min-width: 220px;
+                align-items: center;
+                &:hover {
+                    background-color: #fafafa;
+                }
+                .social-icon {
+                    padding-right: 2.19rem !important;
+                }
+                .social-title {
+                    font-size: $fs-base;
+                    font-family: "Satoshi";
+                    color: $heading-color;
+                    padding-left: 2rem !important;
+                }
+            }
+        }
+        .bitnasdaq-community {
+            .bit-comunity {
+                position: relative;
+                &::after {
+                    content: "";
+                    background: url("/images/bitnasdaq-community.svg");
+                    background-position: center;
+                    background-size: contain;
+                    background-repeat: no-repeat;
+                    height: 100%;
+                    width: 30%;
+                    position: absolute;
+                    top: 0;
+                    right: 0;
+                }
+            }
+        }
+        .community-querries {
+            .ant-row-flex {
+                padding: 2rem 4rem;
+                background-image: url("/images/community-querries-bg.png");
+                background-position: center;
+                background-repeat: no-repeat;
+                background-size: cover;
+            }
+            .help-btn-container {
+                text-align: end;
+            }
+            .help-btn {
+                padding: 0rem 2.555rem;
+                border-radius: 4px;
+            }
+            .join-us-new-heading {
+                font-size: $fs_7xl;
+            }
+        }
+    }
+    @media screen and (max-width: 1440px),
+        (min-width: 1153px) and (max-width: 1195px) {
+        .main-content {
+            padding: 0 25px;
+        }
+    }
+    //tabs
+    @media screen and (max-width: 1125px) {
+        .community-card-container {
+            > .ant-col {
+                padding: 0 15px !important;
+            }
+        }
+        .joinus-cards {
+            .ant-row-flex {
+                .join-us-card-column {
+                    padding: 0 17px !important;
+                }
+            }
+        }
+    }
+    //mobile
+    @media screen and (max-width: 1000px) {
+        .community-card-container {
+            position: static !important;
+            flex-direction: column;
+            gap: 1rem;
+            align-items: center;
+            > .ant-col {
+                width: 100%;
+            }
+            .comunity-details {
+                padding: 0.5rem 1rem !important;
+            }
+            .ant-card {
+                width: 100%;
+                max-width: 100% !important;
+            }
+        }
+        .community-section {
+            text-align: center;
+        }
+
+        .bitnasdaq-community {
+            .bit-comunity {
+                text-align: center;
+                &::after {
+                    display: none;
+                }
+            }
+        }
+        .joinus-cards {
+            margin-top: 35rem !important;
+            .join-new-card {
+                align-items: center;
+            }
+            .join-social-card {
+                border: none !important;
+                max-width: 100% !important;
+                text-align: center !important;
+            }
+        }
+        .social-card-container {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        .community-cards {
+            max-width: 100% !important;
+        }
+        .community-querries {
+            .ant-row-flex {
+                flex-direction: column;
+            }
+            .help-btn-container {
+                text-align: center;
+            }
+        }
+    }
+}

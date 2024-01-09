@@ -1,0 +1,872 @@
+@import "assets/variables/light.scss";
+
+#financial {
+    background-color: #fff;
+    .financial-header {
+        position: relative;
+        background-image: url("/images/financial-bg.png");
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        padding: 45px 0 0px 0;
+
+        .financial-heading {
+            font-size: $fs_7xl;
+            line-height: 45px;
+            margin-bottom: 3px;
+            color: $white;
+        }
+
+        .financial-desc {
+            font-size: $fs-base;
+            color: $white;
+        }
+
+        .financial-tab-btn {
+            position: absolute;
+            bottom: 0;
+        }
+        .product-suite {
+            display: flex;
+            justify-content: flex-start;
+            align-items: center;
+        }
+        .outer-box {
+            position: relative;
+            .financial-profit-black {
+                position: absolute;
+                top: 60px;
+                left: 0;
+                right: 0px;
+                .financial-black-card {
+                    padding-left: 165px;
+                    margin-right: 60px;
+                }
+
+                .total-assets {
+                    font-size: $fs_2xl;
+                    color: $white;
+                }
+                .total-profit {
+                    font-size: $fs-base;
+                    color: $white;
+                }
+                .center-line {
+                    background: #525252;
+                    margin: 18px 0px 12px 0;
+                }
+                .assets-pass {
+                    font-size: $text-grey;
+                    color: rgba(255, 255, 255, 0.5);
+                }
+
+                .orange-btn-row {
+                    background: #272727;
+                    backdrop-filter: blur(25px);
+                    border-radius: 35px 5px 5px 5px;
+                    padding: 12px 5px 12px 24px;
+                    margin-left: 105px;
+                    margin-right: 60px;
+                    .gray-btn {
+                        background-color: #464646 !important;
+                    }
+                    .primary-btn {
+                        height: 28px !important;
+                        font-size: $fs_sm !important;
+                        border-radius: 4px !important;
+                    }
+                }
+            }
+        }
+    }
+    .ant-divider {
+        height: 0.6px !important;
+    }
+    .profit-heading {
+        font-weight: 500;
+        font-size: $fs_2xl;
+        color: $heading-color;
+    }
+    .total-assets {
+        font-weight: 500;
+        font-size: $fs_7xl;
+        color: $heading-color;
+    }
+    .assets-pass {
+        font-size: $fs_sm;
+        color: $text-grey;
+    }
+    .financial-btn-tabs {
+        .ant-radio-button-wrapper {
+            background: transparent;
+            border-radius: 0px 0px 0px 0px !important;
+            width: 223px;
+            font-size: $fs-base;
+            border: none;
+            margin-right: 0px !important;
+            font-weight: 500;
+            height: 56px;
+            line-height: 56px;
+            letter-spacing: 0.2px;
+            color: rgba(255, 255, 255, 0.5);
+            text-align: center;
+        }
+        .ant-radio-button-wrapper:hover {
+            background-color: transparent;
+            border-radius: 0px 0px 0px 0px;
+            color: rgba(255, 255, 255, 0.5);
+            font-size: $fs-base;
+            transition: none
+
+        }
+        label.ant-radio-button-wrapper.ant-radio-button-wrapper-checked {
+            background-color: #1d1d1d !important;
+            border-radius: 0px 0px 0px 0px;
+            margin-right: 0px !important;
+            color: $white;
+            width: 223px;
+            border: none;
+            border-top: 2px solid $primary-color !important;
+            font-size: $fs-base;
+            // box-shadow: inset 0px 6px 11px rgba(168, 168, 168, 0.25) !important;
+        }
+        .ant-radio-button-wrapper:first-child {
+            border-radius: 0;
+        }
+        .ant-radio-group-solid
+            .ant-radio-button-wrapper-checked:not(.ant-radio-button-wrapper-disabled):hover {
+            box-shadow: none;
+            background: transparent;
+        }
+        span.ant-radio-button.ant-radio-button-checked {
+            background-color: #fff3e0;
+        }
+        .ant-radio-button-wrapper:not(:first-child)::before {
+            background-color: transparent;
+            width: 0;
+        }
+    }
+    .card-tabs {
+        background: #ffffff;
+        .ant-card-body {
+            padding: 22px 24px;
+        }
+        .ant-tabs-nav-wrap {
+            padding: 0 !important;
+        }
+    }
+    .financial-card {
+        .ant-tabs-nav-wrap {
+            padding: 0 !important;
+        }
+        .ant-tabs-nav .ant-tabs-tab {
+            background-color: #fff !important;
+            color: $text-grey;
+            padding: 5px 12px;
+            transition: none;
+            &:hover {
+                background-color: $primary-color !important;
+                color: $white !important;
+            }
+        }
+        .ant-tabs-nav-animated {
+            background-color: #fff !important;
+            padding: 0 !important;
+        }
+        .ant-tabs-tab-active.ant-tabs-tab {
+            background-color: $primary-color !important;
+            color: $white !important;
+            box-shadow: inset 0px 6px 11px rgba(168, 168, 168, 0.25) !important;
+        }
+        .ant-tabs-extra-content {
+            max-width: 220px;
+            width: 100%;
+            height: 40px;
+            line-height: 40px;
+            .ant-input-affix-wrapper .ant-input:not(:first-child) {
+                padding-left: 33px;
+            }
+            .ant-input {
+                border: 1px solid #d0d5dd !important;
+                box-shadow: 0px 1px 2px rgba(16, 24, 40, 0.05);
+                border-radius: 6px !important;
+                height: 38px !important;
+                &::placeholder {
+                    font-weight: 400;
+                    font-size: $fs_sm !important;
+                    color: #667085 !important;
+                }
+            }
+        }
+    }
+    .selled-btc {
+        font-size: $fs_sm;
+        color: #81858c;
+    }
+
+    .btc-main-card {
+        border: 1px solid #ebebeb;
+        border-radius: 10px;
+        .ant-card-body {
+            padding: 0px 0 25px 0;
+            .counter-card {
+                background: #f9f9f9 !important;
+                border-radius: 9px;
+                .ant-card-body {
+                    padding: 13px 10px !important;
+                    .counter-month {
+                        font-size: $fs_sm;
+                        line-height: 18px;
+                        color: $heading-color;
+                    }
+                    .ant-divider.ant-divider-vertical {
+                        height: 2.9em;
+                    }
+                    .counter-days {
+                        font-size: $fs_sm;
+                        color: $text-grey;
+                    }
+                }
+            }
+            .btc-row {
+                background: linear-gradient(
+                    180deg,
+                    #f4fffc 0%,
+                    rgba(255, 255, 255, 0) 165%
+                );
+                min-height: 57px;
+                border-radius: 10px 10px 0 0;
+                .btc-heading {
+                    font-size: $fs-base;
+                    color: $heading-color;
+                    line-height: 23px;
+                }
+                .duration-txt {
+                    font-weight: 400;
+                    font-size: $fs_xs;
+                    color: #81858c;
+                }
+                .btc-heading-day {
+                    font-weight: 400;
+                    font-size: $fs_sm;
+                    color: $heading-color;
+                }
+                .status-txt {
+                    color: $text-grey;
+                }
+                .charges-txt {
+                    color: #0ecb81;
+                    font-size: $fs-base;
+                }
+
+                .phase {
+                    margin-top: -10px;
+                }
+            }
+            .btc-heading {
+                font-size: $fs-base;
+                color: #81858c;
+            }
+            .charges-txt {
+                color: #0ecb81;
+            }
+            .ongoing-txt {
+                color: #ff6f3a;
+            }
+            .ant-progress-outer {
+                padding-right: 0 !important;
+            }
+            .btc-title-finanace {
+                font-size: $fs-base;
+                color: $heading-color;
+            }
+            .ant-progress-text {
+                display: none;
+            }
+            .ant-progress-bg {
+                background: #faa71a;
+                border-radius: 20px;
+                height: 3px !important;
+            }
+            .ant-progress-inner {
+                background: #d9d9d9;
+                border-radius: 28px;
+            }
+            .radio-financial-btn {
+                position: relative;
+            }
+            .tick-img {
+                position: absolute;
+                right: -1px;
+            }
+            .all-product-tabs {
+                position: relative;
+
+              .ant-tabs-tab-active.ant-tabs-tab::after {
+                    content: "";
+                    height: 20px;
+                    width: 20px;
+                    background: url('/images/orange-bg-tick.svg');
+                    position: absolute;
+                    right: -1px !important;
+                    top: 0;
+                }
+                .ant-tabs-bar {
+                    margin-bottom: 1px;
+                }
+                .ant-tabs-nav.ant-tabs-nav-animated {
+                    line-height: 30px !important;
+                    height: 30px !important;
+                }
+                .ant-tabs-nav .ant-tabs-tab {
+                    font-weight: 500;
+                    font-size: $fs_xmd;
+                    padding: 0 13px !important;
+                    line-height: 30px !important;
+                    height: 30px !important;
+                    margin-right: 5px !important;
+                    border-radius: 4px !important;
+                    background: transparent;
+                    border: none;
+                    color: #81858C;
+                    margin-bottom: 0px;
+                }
+                .ant-tabs.ant-tabs-card .ant-tabs-card-bar .ant-tabs-nav-container {
+                    height: 30px;
+                    line-height: 30px !important;
+                }
+                .ant-tabs-tab-active.ant-tabs-tab {
+                    background: $white !important;
+                    border-radius: 7px !important;
+                    color: $heading-color !important;
+                    border: 1px solid $primary-color !important;
+                    border-radius: 4px !important;
+                    box-shadow: none !important;
+                    font-weight: 500 !important;
+                    padding: 0 13px !important;
+
+                }
+                .ant-tabs-nav .ant-tabs-tab:last-child {
+                    margin-right: 0 !important;
+                }
+            }
+            .ant-radio-group.ant-radio-group-solid.ant-radio-group-default {
+                background: transparent;
+                border-radius: 10px;
+                height: 30px;
+                padding: 0;
+                width: 100%;
+            }
+            .ant-radio-button-wrapper {
+                font-weight: 500;
+                font-size: $fs_xmd;
+                padding: 0 9px;
+                margin-right: 10px;
+                background: transparent;
+                border: none;
+                color: #81858C;
+                margin-bottom: 0px;
+                height: 30px;
+                line-height: 30px;
+            }
+            label.ant-radio-button-wrapper.ant-radio-button-wrapper-checked {
+                background: $white !important;
+                border-radius: 7px !important;
+                color: $heading-color !important;
+                border: 1px solid $primary-color !important;
+                border-radius: 4px !important;
+                box-shadow: none !important;
+                font-weight: 500 !important;
+            }
+            .ant-radio-button-wrapper:last-child {
+                margin-right: 0 !important;
+            }
+            .ant-radio-button-wrapper:not(:first-child)::before {
+                background-color: transparent;
+                width: 0;
+            }
+            .first-card {
+                border-right: 0.6px solid #cacaca;
+            }
+            .subscription-btn {
+                border-radius: 8px;
+                border: 1px solid #d0d5dd;
+                background: #fff;
+                box-shadow: 0px 1px 2px 0px rgba(16, 24, 40, 0.05);
+                color: $heading-color;
+                &:hover {
+                    background: $primary-color;
+                    border: 1px solid $primary-color;
+                    color: $text-white;
+                }
+            }
+        }
+    }
+}
+.ant-modal-close {
+    display: none !important;
+}
+#subscription-modal {
+    form .ant-input-number-handler-wrap {
+        display: none;
+    }
+    .ant-modal-close {
+        display: none !important;
+    }
+    .ant-modal {
+        top: 30px;
+    }
+    .profit-icon-btc {
+        margin-bottom: 3px;
+    }
+    .ant-modal-body {
+        padding: 24px 20px;
+    }
+    .financial-card {
+        border: 1px solid #f1f1f1;
+        border-radius: 12px;
+        .ant-card-body {
+            padding: 24px 12px;
+        }
+    }
+
+    .all-transfer-txt {
+        border: 1px solid #d0d5dd;
+        height: 38px;
+        border-left: none;
+        border-radius: 0 6px 6px 0;
+        line-height: 38px;
+        color: $text-grey;
+        &:hover {
+            color: $primary-color;
+        }
+    }
+    .subscription-title {
+        font-size: $fs_lg;
+        color: $heading-color;
+    }
+
+    .accruing-txt {
+        font-size: $fs_md;
+        color: $heading-color;
+    }
+    .accruing-date {
+        font-size: $fs_sm;
+        color: $text-grey;
+    }
+    .tip-card {
+        background: rgba(217, 217, 217, 0.17);
+        border-radius: 12px;
+        .ant-card-body {
+            padding: 12px 10px;
+            .tip-title {
+                font-size: $fs_sm;
+                color: $heading-color;
+            }
+            .tip-title-desc {
+                font-size: $fs_sm;
+                color: $text-grey;
+            }
+        }
+    }
+    .subscription-modal-bg {
+        background: url("/images/financial-modal-bg.png");
+        background-position: center;
+        background-size: contain;
+        background-repeat: no-repeat;
+        padding: 30px 0;
+    }
+    .amount-blance {
+        font-size: $fs_sm;
+        color: $heading-color;
+    }
+    .product-type {
+        font-size: $fs_xmd;
+        color: $text-grey;
+    }
+    .hybrid-txt {
+        color: $heading-color;
+        font-size: $fs-base;
+    }
+    .profit-coin {
+        color: $text-grey;
+        font-size: $fs_xmd;
+    }
+    label.ant-radio-button-wrapper {
+        font-size: 10px !important;
+        margin-right: 13px;
+        height: 35px;
+        line-height: 35px;
+        background: #ffffff;
+        border: 0.5px solid #e4e4e4;
+        border-radius: 3px;
+    }
+    label.ant-radio-button-wrapper:last-child {
+        margin-right: 0 !important;
+    }
+    .ant-radio-button-wrapper:not(:first-child)::before {
+        background-color: transparent;
+        width: 0;
+    }
+    .ant-tabs-bar {
+        border: none;
+    }
+    .subscribe-divider {
+        background-color: #eeeeee !important;
+        width: 1px !important;
+        height: 0.6px !important;
+        top: 0em !important;
+    }
+    .btc-box {
+        background: #fafafa;
+        border-radius: 6px;
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+        padding: 5px;
+        max-width: 130px;
+        color: #cacaca;
+        width: 100%;
+    }
+    .btc-box1 {
+        max-width: 66px !important;
+    }
+    .subscription-rules {
+        max-width: max-content;
+    }
+
+    .deposit-txt {
+        display: flex;
+        justify-content: flex-end;
+        font-weight: 400;
+        font-size: $fs_sm;
+        color: #afafaf;
+    }
+    .btc-usdt-btn {
+        height: 30px;
+        font-size: $fs_sm;
+        color: $black;
+        &:hover {
+            background-color: #fff !important;
+        }
+    }
+    .usdt-btn {
+        height: 30px;
+        font-size: $fs_sm;
+        color: #cacaca;
+        background: transparent;
+    }
+    .outline-btn {
+        height: 36px !important;
+    }
+    .deposit-btn {
+        height: 27px;
+        width: 100px;
+        color: $black;
+        border: none;
+        background: #d9d9d9;
+        border-radius: 0;
+        font-weight: 300;
+        font-size: $fs_xs;
+    }
+    .buy-btn {
+        background: #f8d0a0;
+    }
+    .subscription-desc {
+        font-weight: 400;
+        font-size: $fs_xs;
+        color: #262626;
+    }
+    .subscription-input.ant-input-number {
+        border-radius: 8px 0 0 8px !important;
+    }
+
+    .ant-modal-content {
+        background: #ffffff;
+        border-radius: 12px;
+        .ant-tabs-nav .ant-tabs-tab {
+            margin-right: 10px;
+            padding: 12px 0 6px 0;
+        }
+        .product-info {
+            font-weight: 400;
+            font-size: $fs-base;
+            color: $black;
+        }
+        .product-locked {
+            font-weight: 400;
+            font-size: $fs_xs;
+            color: $black;
+        }
+        .financing {
+            color: #9b9a9a;
+        }
+    }
+
+    //steps
+    .ant-steps-item-title {
+        font-weight: 400;
+        font-size: $fs_xs;
+        line-height: 20px;
+    }
+    .ant-steps-item-description {
+        font-weight: 400;
+        font-size: $fs_xs;
+        color: #9b9a9a;
+    }
+    .ant-steps-item-wait .ant-steps-item-icon {
+        background-color: #d9d9d9;
+        border-color: #d9d9d9;
+    }
+    .ant-steps-item-wait .ant-steps-item-icon > .ant-steps-icon {
+        color: $black;
+    }
+    .ant-steps-item-wait > .ant-steps-item-container > .ant-steps-item-tail {
+        top: 11px;
+        &:after {
+            background-color: #000000;
+            height: 6px;
+        }
+    }
+    .ant-steps-item-finish .ant-steps-item-icon {
+        background-color: $primary-color;
+    }
+    i.anticon.anticon-check.ant-steps-finish-icon {
+        color: $black;
+    }
+    .ant-steps-item-process .ant-steps-item-icon {
+        background-color: #d9d9d9;
+        border-color: #d9d9d9;
+        .ant-steps-icon {
+            color: $black;
+        }
+    }
+    .ant-steps-item-process > .ant-steps-item-container > .ant-steps-item-tail {
+        top: 11px;
+        &:after {
+            background-color: #000000;
+            height: 6px;
+        }
+    }
+    .ant-steps-item-finish
+        > .ant-steps-item-container
+        > .ant-steps-item-tail.ant-steps-item-tail {
+        top: 11px;
+        &:after {
+            background-color: $primary-color;
+            height: 6px;
+        }
+    }
+    .ant-steps-label-vertical .ant-steps-item-tail {
+        padding: 3.5px 16px;
+        border-radius: 5px;
+    }
+    .ant-steps-item-wait
+        > .ant-steps-item-container
+        > .ant-steps-item-content
+        > .ant-steps-item-title {
+        color: $black;
+    }
+}
+.view-btn {
+    background: linear-gradient(180deg, #ff8d00 0%, #ffa500 100%);
+    border-radius: 3px;
+}
+
+// Verification Modal
+#verification-detail {
+    .verification-info {
+        font-size: $fs_lg;
+        color: $heading-color;
+    }
+    .verification-type {
+        font-size: $fs_sm;
+        color: $primary-color;
+    }
+    .ant-modal-content {
+        background: #fcfcfc;
+        border-radius: 12px;
+    }
+    .label-text {
+        font-size: $fs_sm;
+        color: $heading-color;
+    }
+    .ant-tabs-tab {
+        padding: 20px 0 0 0;
+    }
+}
+.ant-modal-close-x {
+    width: 20px;
+    height: 20px;
+    font-size: $fs-base;
+    line-height: 20px;
+    border-radius: 50%;
+    background-color: $primary-color;
+}
+.ant-modal-close {
+    top: 5px;
+    right: 5px;
+}
+i.anticon.anticon-close.ant-modal-close-icon {
+    font-size: $fs_xs;
+    font-weight: 700;
+}
+
+.image1 {
+    width: 21px !important;
+    position: relative;
+    top: -2px;
+    left: 0;
+}
+.image2 {
+    width: 21px !important;
+    position: absolute;
+    top: -1px;
+    left: 13.5px;
+}
+/* .circle {
+    border: 3px solid rgb(230, 227, 227);
+    background-color: #ffffff;
+    border-radius: 50%;
+} */
+@media screen and (max-width: 1367px) {
+    #financial {
+        .header-row {
+            margin-top: 0 !important;
+        }
+        .financial-header .outer-box .financial-profit-black {
+            top: 38px;
+        }
+        .ant-radio-button-wrapper { 
+            margin-right: 7px !important;
+        }
+        .btc-main-card {
+            .ant-card-body .ant-radio-button-wrapper {
+                font-size: $fs_xmd;
+                padding: 0 5px;
+            }
+        }
+    }
+}
+@media screen and (max-width: 1280px) {
+    #financial {
+        .selled-btc {
+            font-size: $fs_xxs;
+        }
+        .assets-pass {
+            font-size: $fs_xs;
+        }
+       
+        .financial-header {
+            .outer-box .financial-profit-black {
+                top: 35px;
+                .orange-btn-row {
+                    margin-right: 52px;
+                    margin-left: 86px;
+                }
+                .total-assets {
+                    font-size: 1rem;
+                }
+                .financial-black-card {
+                    padding-left: 145px;
+                }
+                .total-profit {
+                    font-size: $fs_sm;
+                }
+            }
+            .financial-heading {
+                font-size: $fs_7xl;
+            }
+            .financial-desc {
+                font-size: $fs_xmd;
+            }
+        }
+        .financial-btn-tabs
+            label.ant-radio-button-wrapper.ant-radio-button-wrapper-checked {
+            font-size: $fs_sm;
+            width: 200px;
+        }
+        .financial-btn-tabs .ant-radio-button-wrapper {
+            font-size: $fs_sm;
+            width: 200px;
+        }
+        .btc-main-card .ant-card-body {
+            .ant-radio-group.ant-radio-group-solid.ant-radio-group-default {
+                padding: 5px !important;
+            }
+            .ant-radio-group {
+                font-size: $fs_xs !important;
+                padding: 0 5px !important;
+            }
+            .ant-radio-button-wrapper {
+                font-size: $fs_xs !important;
+                padding: 0 5px !important;
+            }
+            .counter-card .ant-card-body {
+                padding: 10px 5px !important;
+                .counter-month {
+                    font-size: $fs_xxs;
+                }
+                .counter-days {
+                    font-size: $fs_xxs;
+                }
+            }
+        }
+    }
+}
+@media screen and (max-width: 1200px) {
+    #financial {
+        .btc-main-card .ant-card-body {
+            .ant-radio-group {
+                font-size: $fs_xxs !important;
+            }
+            .ant-radio-button-wrapper {
+                font-size: $fs_xxs !important;
+            }
+            .counter-card .ant-card-body {
+                padding: 10px 5px !important;
+                .counter-month {
+                    font-size: $fs_xmd;
+                }
+                .counter-days {
+                    font-size: $fs_xs;
+                }
+            }
+        }
+
+        .financial-header .outer-box .financial-profit-black .orange-btn-row {
+            .primary-btn {
+                font-size: $fs_xs !important;
+            }
+            margin-top: 14px !important;
+            padding: 8px 3px;
+            margin-left: 82px;
+            margin-right: 50px;
+        }
+    }
+}
+@media screen and (max-width: 1024px) {
+    #financial {
+        .financial-header {
+            .financial-tab-btn {
+                position: inherit;
+            }
+            padding-top: 25px;
+            .outer-box .financial-profit-black {
+                top: 42px;
+            }
+        }
+        .financial-btn-tabs .ant-radio-button-wrapper {
+            height: 50px;
+            line-height: 50px;
+        }
+        .btc-main-card .ant-card-body {
+            .ant-radio-group {
+                font-size: $fs_xmd !important;
+            }
+            .ant-radio-button-wrapper {
+                font-size: $fs_xmd !important;
+            }
+        }
+    }
+}

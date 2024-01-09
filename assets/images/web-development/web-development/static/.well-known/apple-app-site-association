@@ -1,0 +1,11 @@
+{
+    "applinks": {
+        "apps": [],
+        "details": [
+        {
+          "appID": "3N32SGLSAJ.com.bitnasdaq.exchange",
+          "paths": ["*"]
+        }
+      ]
+    }
+  }

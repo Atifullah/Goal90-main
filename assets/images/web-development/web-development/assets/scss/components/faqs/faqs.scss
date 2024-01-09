@@ -1,0 +1,64 @@
+@import "assets/variables/light.scss";
+#faqs {
+    .faqs-txt {
+        font-size: $fs_4xl;
+        color: $heading-color;
+        line-height: 32px;
+    }
+    .ant-collapse-content {
+        border: none;
+    }
+
+    .ant-collapse {
+        border: none !important;
+        background-color: $white;
+        .faqs-item {
+            border-bottom: 1px solid #f3f5f5 !important;
+        }
+        .ant-collapse-item {
+            border: none;
+            background: $white !important;
+            border-radius: 3px;
+            margin-bottom: 20px;
+
+            .ant-collapse-header {
+                padding-left: 0;
+                font-weight: 500;
+                font-size: $fs_sm;
+                color: $heading-color !important;
+                background-color: #fff;
+
+                i.anticon.anticon-caret-right.ant-collapse-arrow {
+                    right: 0 !important;
+                    position: absolute;
+                    text-align: right !important;
+                    padding-right: 15px;
+                }
+            }
+            .ant-collapse-content > .ant-collapse-content-box {
+                background: #f5f5f5;
+                border-radius: 4px;
+                margin-top: 7px;
+                padding: 17px 24px;
+                font-weight: 400;
+                font-size: $fs-base;
+                color: $heading-color;
+
+                p {
+                    max-width: 1191px;
+                    width: 100%;
+                    color: $heading-color;
+                    font-size: $fs_sm;
+                }
+            }
+        }
+    }
+    //   .cursor {
+    //     color: #71839B;
+    // }
+    @media screen and (max-width: 1200px) {
+        .faqs-txt {
+            font-size: $fs_lg;
+        }
+    }
+}

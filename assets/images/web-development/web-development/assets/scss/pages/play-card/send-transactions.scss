@@ -1,0 +1,565 @@
+@import "assets/variables/light.scss";
+#send-play-modal {
+    .help-center-modal {
+        .ant-modal-content {
+            .ant-modal-body {
+                padding: 20px 0px !important;
+            }
+        }
+    }
+.userForm {
+    .ant-modal {
+        top: 100px;
+    }
+}
+.add-space {
+    text-indent: 50px;
+}
+    .acitve-list {
+        color: #FF7A00;
+    }
+
+    .has-success.has-feedback .ant-form-item-children-icon {
+        display: none;
+    }
+
+    .has-error.has-feedback .ant-form-item-children-icon {
+        display: none;
+    }
+
+    .card-list {
+        color: #FFF;
+        font-family: 'roboto';
+        font-size: $fs_xs;
+        text-decoration-line: underline;
+    }
+
+    .ant-modal {
+        top: 40px;
+    }
+
+    form .has-feedback :not(.ant-input-group-addon)>.ant-select .ant-select-arrow {
+        right: 11px;
+    }
+
+    .tip-desc {
+        color: rgba(254, 254, 254, 0.50);
+        font-family: 'roboto';
+        font-size: $fs_sm;
+        line-height: 20px;
+
+        span {
+            color: #FF7A00;
+        }
+    }
+
+    .ant-modal-content {
+        border: 1px solid transparent;
+        border-radius: 7px;
+        background:
+            linear-gradient(to top, #191919, #191919),
+            linear-gradient(to top, #191919, #333333);
+        background-clip: padding-box, border-box;
+        background-origin: padding-box, border-box;
+        box-shadow: 0px 4px 65px 0px rgba(0, 0, 0, 0.49);
+
+        .tip-tab-txt {
+            color: rgba(255, 255, 255, 0.50) !important;
+        }
+
+        .ant-modal-body {
+            padding: 20px 15px;
+
+            .room-card {
+                position: relative;
+
+                .room-info-txt {
+                    top: 20px !important;
+                    // left: 58px !important;
+                    left: 0;
+                    right: 0;
+                    text-align: center;
+
+                }
+
+                .licensing-rules-img {
+                    top: 25px !important;
+
+                }
+
+                .game-rom-txt {
+                    position: absolute;
+                    color: #FFF;
+                    font-family: 'plaguard';
+                    font-size: $fs_2xl;
+                    top: 8px;
+                    letter-spacing: 3px;
+                }
+            }
+
+            .ant-tabs-nav-wrap {
+                padding: 24px 0px 0 0;
+                width: 625px;
+                margin: 0 auto;
+            }
+
+            .ant-tabs-nav.ant-tabs-nav-animated {
+                border-radius: 100px;
+                background: linear-gradient(0deg, #121212 0%, #121212 100%), linear-gradient(0deg, #121212 0%, #121212 100%), linear-gradient(0deg, #121212 0%, #121212 100%), #121212;
+                padding: 5px !important;
+                width: 625px;
+
+
+                .ant-tabs-tab {
+                    width: 150px;
+                    height: 45px;
+                    line-height: 45px;
+                    color: rgba(255, 255, 255, 0.50) !important;
+                    font-family: 'roboto';
+                    font-size: $fs-base !important;
+                    font-weight: 400 !important;
+                    background: transparent !important;
+                    margin-right: 0 !important;
+
+                }
+
+                .ant-tabs-tab-active.ant-tabs-tab {
+                    width: 155px !important;
+                    border-radius: 100px !important;
+                    background: #FF7A00 !important;
+                    // box-shadow: 0px 4px 65px 0px rgba(255, 122, 0, 0.49);
+                    padding: 0 !important;
+
+
+                }
+
+                .ant-tabs-nav .ant-tabs-tab {
+                    padding: 0 !important;
+                    margin-right: 0;
+
+                }
+            }
+
+            .ant-tabs-nav .ant-tabs-tab {
+                padding: 0 !important;
+                margin-right: 0;
+            }
+
+            .ant-timeline-item-head {
+                width: 33px;
+                height: 33px;
+                background: transparent;
+            }
+
+            .ant-timeline-item {
+                padding-bottom: 26px !important;
+                // min-height: 73px;
+                font-weight: 500;
+                font-size: $fs_sm;
+                color: #000;
+            }
+
+            .ant-timeline-item-head-custom {
+                top: 11.5px;
+            }
+
+            .ant-timeline-item:last-child {
+                padding-bottom: 5px !important;
+            }
+
+            .ant-timeline-item-tail {
+                left: 12px;
+                top: 35px;
+                height: calc(100% - 43px);
+                border: 1px solid #464646;
+            }
+
+            .ant-timeline-item-content {
+                margin-left: 50px;
+                // padding-top: 7px !important;
+            }
+
+            .stepsgray-card {
+                background: #242424 !important;
+            }
+
+            .steps-bg-card {
+                border-radius: 7px;
+                background: transparent;
+
+                .ant-card-body {
+                    padding: 20px;
+                }
+
+                .card-img-box {
+                    display: flex;
+                    justify-content: space-between;
+                }
+
+                .bull-nine {
+                    color: #FF7A00;
+                    text-shadow: 0px 4px 17px black !important;
+                    font-family: 'luckiest-guy';
+                    font-size: $fs_7xl;
+                    text-transform: uppercase;
+                    text-align: center;
+                    line-height: 1;
+                }
+            }
+
+            .view-link-txt {
+                color: #FF7A00;
+                font-family: 'roboto';
+                font-size: $fs_2xl;
+                text-decoration: underline;
+                text-transform: initial;
+            }
+
+            .game-divider {
+                background: #2C2B2B;
+                margin: 20px 0;
+            }
+
+            .left-txt {
+                color: rgba(255, 255, 255, 0.50);
+                font-family: 'roboto';
+                font-size: $fs_xmd;
+            }
+
+            .user-email {
+                color: #FFF;
+                font-family: 'roboto';
+                font-size: $fs_md;
+            }
+
+            .gold-card {
+                background: rgba(54, 54, 54, 0.40) !important;
+
+            }
+
+            .multiple-card {
+                background: transparent;
+
+                .ant-card-body {
+                    padding: 20px 24px;
+                }
+
+                .left-txt {
+                    font-family: 'roboto';
+                    font-size: $fs_2xl;
+                    font-weight: 900;
+                    background: linear-gradient(#D4952B, #F3DD78);
+                    -webkit-background-clip: text;
+                    -webkit-text-fill-color: transparent;
+                    text-transform: uppercase;
+                }
+
+                .silver-txt {
+                    background: linear-gradient(#979797, #FFFFFF);
+                    -webkit-background-clip: text;
+                    -webkit-text-fill-color: transparent;
+                }
+
+                .orange-txt {
+                    font-family: 'roboto';
+                    font-size: $fs_2xl;
+                    font-weight: 900;
+                    color: #FF7A00;
+                    text-transform: uppercase;
+
+                }
+            }
+
+            .help-center-box {
+                background: url('/images/play-game.png');
+                background-position: center;
+                background-repeat: no-repeat;
+                background-size: cover;
+            }
+
+            .help-scroll {
+                width: 100%;
+                height: 52vh !important;
+                padding-bottom: 5px;
+                overflow-y: auto;
+                margin-top: 45px;
+            }
+
+            .licensing-steps-guide {
+                height: 60vh !important;
+            }
+
+            .red-bull {
+                color: #FF0000 !important;
+            }
+
+            .orange-bull {
+                color: #FF7A00;
+            }
+
+            .silver-bull {
+                background: linear-gradient(to right, #948D87, #FFFFFF);
+                -webkit-background-clip: text;
+                -webkit-text-fill-color: transparent;
+            }
+
+            .gold-bull {
+                background: linear-gradient(to right, #E8C35C, #DDAB42);
+                -webkit-background-clip: text;
+                -webkit-text-fill-color: transparent;
+            }
+
+            .help-scroll::-webkit-scrollbar-track {
+                border-radius: 19px;
+                background-color: transparent;
+            }
+
+            .help-scroll::-webkit-scrollbar {
+                width: 13px;
+                background-color: transparent;
+            }
+
+            .help-scroll::-webkit-scrollbar-thumb {
+                border-radius: 19px;
+                background-color: #3D3D3D;
+                ;
+            }
+
+            .help-desc {
+                color: #FFF;
+                font-family: 'roboto';
+                font-size: $fs-base;
+            }
+
+            .link-txt {
+                text-decoration: underline;
+            }
+
+            .bit-block {
+                color: rgba(255, 255, 255, 0.50) !important;
+                font-size: $fs_2xl;
+                text-transform: initial;
+            }
+
+            .help-heading {
+                color: #FF7A00;
+                font-family: 'roboto';
+                font-size: $fs_2xl;
+                font-weight: 900;
+                text-transform: uppercase;
+            }
+
+            .one-txt {
+                font-size: $fs_14xl !important;
+            }
+
+            .bnq-heading {
+                color: #FFF;
+                font-family: 'roboto';
+                font-size: $fs_2xl;
+            }
+
+            .send-desc {
+                color: rgba(255, 255, 255, 0.50);
+                font-size: $fs_sm;
+                font-weight: 400;
+            }
+
+            .info-title {
+                color: rgba(255, 255, 255, 0.50);
+                font-family: 'satoshi';
+                font-size: $fs_sm;
+            }
+
+            .info-card1 {
+                border-radius: 7px !important;
+                background: #212121 !important;
+
+                .ant-card-body {
+                    padding: 15px 20px !important;
+                }
+            }
+
+            .user-info-card {
+                border-radius: 6px;
+                background: #2E2E2E;
+
+                img {
+                    border-radius: 50%;
+                    width: 30px;
+                    height: 30px;
+                }
+
+                .ant-card-body {
+                    padding: 14px;
+                }
+
+                .nick-name {
+                    color: rgba(255, 255, 255, 0.50);
+                    font-family: 'roboto';
+                    font-size: $fs_xs;
+                }
+
+
+            }
+
+            .ant-form-item-label>label {
+                color: rgba(255, 255, 255, 0.50);
+                font-family: 'roboto';
+                font-size: $fs_sm;
+                font-weight: 500;
+            }
+
+            .user-heading {
+                color: #FFF;
+                font-family: 'roboto';
+                font-size: $fs_lg;
+            }
+
+            input.ant-input {
+                border-radius: 6px;
+                border: 1px solid #3D3D3D !important;
+                background: #2E2E2E !important;
+                /* Shadow / xs */
+                box-shadow: 0px 1px 2px 0px rgba(16, 24, 40, 0.05);
+                color: #FFF;
+                font-family: 'satoshi';
+                font-size: $fs_xmd;
+                font-weight: 500;
+
+                &::placeholder {
+                    color: #FFF;
+                    font-family: 'satoshi';
+                    font-size: $fs_xmd;
+                    font-weight: 500;
+                    color: #FFF;
+                    opacity: 50%;
+                }
+            }
+
+            .ant-select-selection.ant-select-selection--single {
+                border-radius: 8px;
+                border: 1px solid #3D3D3D !important;
+                background: #2E2E2E !important;
+                /* Shadow / xs */
+                box-shadow: 0px 1px 2px 0px rgba(16, 24, 40, 0.05);
+                border: none;
+                font-family: 'roboto';
+                font-size: $fs_sm;
+                font-weight: 500;
+                color: #fff;
+                box-shadow: none;
+
+            }
+
+            .ant-select-selection-selected-value {
+                color: #FFF;
+            }
+
+            .ant-select-selection-selected-value {
+                color: #FFF;
+            }
+
+            i.anticon.anticon-caret-down.ant-select-arrow-icon {
+                color: #7D7D7D;
+                font-size: $fs_md;
+            }
+
+            i.anticon.anticon-eye.ant-input-password-icon {
+                color: #7D7D7D;
+                font-size: $fs_md;
+            }
+
+            .next-btn {
+                border-radius: 8px;
+                border: 1px solid #FF7A00;
+                background: #FF7A00;
+                color: #fff;
+                box-shadow: 0px 1px 2px 0px rgba(16, 24, 40, 0.05);
+                font-size: $fs-base;
+                font-family: 'roboto';
+            }
+
+            .cancel-btn {
+                border-radius: 8px;
+                border: 1px solid #525150;
+                background: #383838;
+                box-shadow: 0px 1px 2px 0px rgba(16, 24, 40, 0.05);
+
+            }
+
+
+
+        }
+    }
+
+    span.ant-select-arrow {
+        color: #7D7D7D;
+        font-size: $fs_md;
+    }
+
+    .confirmation-bet-modal {
+
+        .ant-modal {
+            top: 100px !important;
+        }
+
+        .common-btn {
+            height: 39px !important;
+            border-radius: 8px;
+            border: 1px solid #FF7A00;
+            background: #FF7A00;
+            color: #fff;
+            font-family: 'roboto';
+            font-size: $fs_xmd !important;
+        }
+
+        .transfer-btn {
+            border: 1px solid #525150 !important;
+            background: #383838 !important;
+
+            &:hover {
+                border: 1px solid #FF7A00 !important;
+                background: #FF7A00 !important;
+            }
+        }
+    }
+
+}
+
+.ant-select-dropdown.send-dropdown.ant-select-dropdown--single.ant-select-dropdown-placement-bottomLeft {
+    .ant-select-dropdown-menu {
+        border: 1px solid #3D3D3D !important;
+        background: #2E2E2E !important;
+    }
+
+    .ant-select-dropdown-menu-item-selected {
+        background: #383838;
+        color: rgba(254, 254, 254, 0.50);
+    }
+
+    .ant-select-dropdown-menu-item:hover:not(.ant-select-dropdown-menu-item-disabled) {
+        background: #383838;
+        color: rgba(254, 254, 254, 0.50);
+    }
+    .ant-select-dropdown-menu::-webkit-scrollbar-track {
+        border-radius: 10px;
+        background-color: #2E2E2E !important;
+    }
+
+    .ant-select-dropdown-menu::-webkit-scrollbar {
+        width: 6px;
+        background-color: #2E2E2E !important;
+    }
+    li.ant-select-dropdown-menu-item {
+        color: rgba(254, 254, 254, 0.50);
+        font-family: 'roboto';
+        font-size: $fs_xs;
+        font-weight: 400;
+    }
+
+    .ant-select-dropdown-menu-item-active:not(.ant-select-dropdown-menu-item-disabled) {
+        background: #383838;
+        color: rgba(254, 254, 254, 0.50);
+    }
+}
