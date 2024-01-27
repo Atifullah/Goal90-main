@@ -127,6 +127,64 @@
             </a-col>
           </a-row>
         </div>
+        <!-- league table  -->
+
+        <a-row class="mt-2rem ml-3 score-table">
+          <a-col :span="2">
+            <img
+              src="../assets/images/world.svg"
+              class="ml-3 mt-2 rounded-circle"
+            />
+          </a-col>
+          <a-col :span="8">
+            <div class="text-white mt-2">
+              <span>World - FIFA Women's World Cup</span>
+            </div>
+          </a-col>
+          <a-col :span="10">
+            <div class="text-lightBlack mt-2 font-style">
+              <span>[Quater Final]</span>
+            </div>
+          </a-col>
+        </a-row>
+        <div class="main-table">
+          <a-row class="ml-3 table-col">
+            <a-col :span="10" class="mt-18 ml-18 color-yellow font-style fw-7">
+              <span>Live</span>
+            </a-col>
+            <a-col :span="10" class="mt-18 text-white">
+              <span>Spain</span>
+              <img src="../assets/images/flag2.png" class="ml-10" />
+              <span class="ml-10 text-white">2-1</span>
+              <img src="../assets/images/flag1.png" class="ml-10" />
+              <span>Netherland</span>
+            </a-col>
+          </a-row>
+          <a-row class="ml-3 table-col2">
+            <a-col :span="10" class="mt-18 ml-18 color-yellow font-style fw-7">
+              <span>18:12</span>
+            </a-col>
+            <a-col :span="10" class="mt-18 text-white">
+              <span>Spain</span>
+              <img src="../assets/images/flag2.png" class="ml-10" />
+              <span class="ml-10 text-white">2-1</span>
+              <img src="../assets/images/flag1.png" class="ml-10" />
+              <span>Netherland</span>
+            </a-col>
+          </a-row>
+          <a-row class="ml-3 table-col">
+            <a-col :span="10" class="mt-18 ml-18 color-yellow font-style fw-7">
+              <span>13:20</span>
+            </a-col>
+            <a-col :span="10" class="mt-18 text-white">
+              <span>Spain</span>
+              <img src="../assets/images/flag2.png" class="ml-10" />
+              <span class="ml-10 text-white">2-1</span>
+              <img src="../assets/images/flag1.png" class="ml-10" />
+              <span>Netherland</span>
+            </a-col>
+          </a-row>
+        </div>
       </div>
     </div>
   </div>
